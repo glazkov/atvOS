@@ -7,6 +7,8 @@
     <uses-feature android:name="android.hardware.wifi" android:required="false" />
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_TV_LISTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <!-- Needed since Android 10 to read the Wi-Fi network name for the network pill. Never requested at
@@ -138,7 +140,7 @@
             android:launchMode="singleTop"
             android:excludeFromRecents="true"
             android:noHistory="true"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            android:theme="@style/Theme.TvHome.QuickSettings" />
         <activity
             android:name=".HomeSettingsActivity"
             android:exported="false"
@@ -183,7 +185,7 @@
             android:exported="false"
             android:excludeFromRecents="true"
             android:noHistory="true"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+            android:theme="@style/Theme.TvHome.Clock" />
 
         <!-- stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
              it sends a window event when it closes (HomeKeyService.probeAtBoot). -->

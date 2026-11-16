@@ -7,7 +7,7 @@
     android:clipChildren="false"
     android:clipToPadding="false">
 
-    <FrameLayout
+    <com.gathin.tvhome.SmoothCard
         android:id="@+id/card"
         android:layout_width="180dp"
         android:layout_height="101dp"
@@ -47,7 +47,7 @@
             android:textSize="13sp"
             android:fontFamily="@string/font_body"
             android:visibility="gone" />
-    </FrameLayout>
+    </com.gathin.tvhome.SmoothCard>
 
     <TextView
         android:id="@+id/name"
@@ -62,7 +62,7 @@
         android:alpha="0"
         android:translationY="-6dp"
         android:textColor="#F2FFFFFF"
-        android:textSize="14sp"
+        android:textSize="12.5sp"
         android:fontFamily="@string/font_medium"
-        android:letterSpacing="0.02" />
+        android:letterSpacing="0" />
 </FrameLayout>

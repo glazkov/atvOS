@@ -88,7 +88,7 @@ final class VpnBadge extends ReplacementSpan {
     }
 
     private float textSize(Paint p) {
-        return p.getTextSize() * 0.78f;
+        return p.getTextSize() * (12.5f / 14.5f);
     }
 
     private float lockSize(Paint p) {
@@ -101,6 +101,8 @@ final class VpnBadge extends ReplacementSpan {
 
     @Override
     public int getSize(@NonNull Paint paint, CharSequence text, int start, int end, Paint.FontMetricsInt fm) {
+        // Preserve the line metrics when the label contains only this VPN span.
+        if (fm != null) paint.getFontMetricsInt(fm);
         float old = paint.getTextSize();
         paint.setTextSize(textSize(paint));
         float w = paint.measureText(text, start, end);

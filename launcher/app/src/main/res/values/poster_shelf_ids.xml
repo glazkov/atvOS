@@ -1,0 +1,10 @@
+<resources>
+ <!-- Enabled in the atvOS TCL-based launcher; a theme can override poster_shelf=false. -->
+ <bool name="poster_shelf">true</bool>
+ <item name="posterShelf" type="id"/>
+ <item name="shelfList" type="id"/>
+ <item name="shelfCard" type="id"/>
+ <item name="shelfImage" type="id"/>
+ <item name="shelfCaption" type="id"/>
+ <item name="shelfProgress" type="id"/>
+</resources>

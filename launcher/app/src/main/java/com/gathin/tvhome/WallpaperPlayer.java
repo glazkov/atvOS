@@ -48,6 +48,8 @@ final class WallpaperPlayer {
     private final int dimColor;
     /** The picture on screen, released once the next one has been drawn. */
     private Bitmap current;
+    private Runnable backdropChanged;
+    private boolean visibleForTile = true;
     private boolean active;
     private boolean closed;
     private boolean loading;
@@ -113,7 +115,6 @@ final class WallpaperPlayer {
             if (bitmap != null) {
                 show(bitmap);
                 // The picture covers the whole screen: the root's plain colour under it is overdraw.
-                root.setBackground(null);
                 displayed = first.getName();
                 showCaption(false);
                 if (!displayed.equals(previous)) {
@@ -259,13 +260,38 @@ final class WallpaperPlayer {
         return key.toString();
     }
 
+    boolean hasWallpaper() {
+        return current != null;
+    }
+
+    void setVisibleForTile(boolean visible) {
+        if (visibleForTile == visible) return;
+        visibleForTile = visible;
+        updateBackdropVisibility();
+    }
+
+    private void updateBackdropVisibility() {
+        boolean shown = visibleForTile && current != null;
+        image.setVisibility(shown ? View.VISIBLE : View.INVISIBLE);
+        if (shown) root.setBackground(null);
+        else root.setBackgroundColor(backgroundColor);
+        if (backdropChanged != null) backdropChanged.run();
+    }
+
+    ImageView imageView() {
+        return image;
+    }
+
+    void setBackdropChangedListener(Runnable listener) {
+        backdropChanged = listener;
+    }
+
     /** Puts a picture on screen and releases the previous one after a frame has drawn the new one. */
     private void show(Bitmap bitmap) {
         Bitmap old = current;
         current = bitmap;
-        // The wallpaper covers the whole root; avoid drawing the fallback colour under it.
-        root.setBackground(null);
         image.setImageBitmap(bitmap);
+        updateBackdropVisibility();
         if (old != null && old != bitmap) image.postDelayed(old::recycle, 500);
     }
 

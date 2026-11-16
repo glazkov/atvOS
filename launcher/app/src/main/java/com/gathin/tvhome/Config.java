@@ -226,6 +226,8 @@ final class Config {
     final List<RaceWeekend.Race> raceCalendar;
     /** Cinematic top shelf (config.xml, cinematic_home): the focused dock app's artwork behind a larger shelf. */
     final boolean cinematicHome;
+    /** Optional real content carousel, independent of the cinematic title. */
+    final boolean posterShelf;
     /** The glow in the focused app's colour behind the dock (config.xml, ambient_glow); false keeps the background plain. */
     final boolean ambientGlow;
     /** The focus highlight in the focused app's colour on every tile (config.xml, app_glow), as cinematic_home does for the dock. */
@@ -294,7 +296,7 @@ final class Config {
                    int[] settingsKeycodes, boolean settingsKeyPanel, boolean restoreKeyServices, boolean wallpaperEnabled, File wallpaper, List<File> wallpapers,
                    int wallpaperRotationMinutes, int wallpaperDim, int dockOpacity, String wallpaperOrder, boolean overlayApplied,
                    Festival festival, int[] inputKeycodes, List<String> appKeys, String stockHomeRedirect,
-                   List<RaceWeekend.Race> raceCalendar, boolean cinematicHome, boolean ambientGlow, boolean appGlow, boolean fadeRows, int homeIdleClockMinutes,
+                   List<RaceWeekend.Race> raceCalendar, boolean cinematicHome, boolean posterShelf, boolean ambientGlow, boolean appGlow, boolean fadeRows, int homeIdleClockMinutes,
                    boolean keyFilter, boolean dockGlass, String glowStyle, boolean wallpaperCaptions,
                    boolean handleViewInputs, boolean tileMenu, boolean dockEvenPadding, boolean dockBand, boolean cinematicDots, boolean cinematicWhiteFocus, boolean wifiStatusColor, int cinematicScrim, int cinematicArt,
                    Map<String, Set<String>> wallpaperMoods, boolean gamepadPassthrough, boolean consumeVolumeKeys, boolean volumePausesFilter, boolean homeIgnoreChannelKeys, boolean powerOnHome, boolean homeLongPressHome, boolean wifiStatusWarnings, List<String> topBarApps, boolean showGreeting, boolean headerWhite, boolean clockWallpaper, int clockWallpaperDim, boolean clockGlow, String glassStyle, boolean singleRow, boolean dockBandAll, boolean lunarDate, int lunarUtcOffset, boolean dateBelowClock, boolean vpnPill, String locale, boolean powerOnHomeAlways, boolean inputsConnectedOnly, boolean inputsCecStateOnly,
@@ -382,6 +384,7 @@ final class Config {
         this.festival = festival;
         this.raceCalendar = Collections.unmodifiableList(raceCalendar);
         this.cinematicHome = cinematicHome;
+        this.posterShelf = posterShelf;
         this.ambientGlow = ambientGlow;
         this.appGlow = appGlow;
         this.fadeRows = fadeRows;
@@ -512,6 +515,7 @@ final class Config {
         List<String> appKeys = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.app_keys)));
         String stockHomeRedirect = res.getString(R.string.stock_home_redirect).trim();
         boolean cinematic = res.getBoolean(R.bool.cinematic_home);
+        boolean posterShelf = res.getBoolean(R.bool.poster_shelf);
         boolean ambientGlow = res.getBoolean(R.bool.ambient_glow);
         boolean appGlow = res.getBoolean(R.bool.app_glow);
         boolean fadeRows = res.getBoolean(R.bool.fade_rows);
@@ -629,6 +633,7 @@ final class Config {
             appKeys = stringList(json, "app_keys", appKeys);
             stockHomeRedirect = string(json, "stock_home_redirect", stockHomeRedirect);
             cinematic = bool(json, "cinematic_home", cinematic);
+            posterShelf = bool(json, "poster_shelf", posterShelf);
             ambientGlow = bool(json, "ambient_glow", ambientGlow);
             appGlow = bool(json, "app_glow", appGlow);
             fadeRows = bool(json, "fade_rows", fadeRows);
@@ -725,7 +730,7 @@ final class Config {
                 vpn, homeSettings, showStats, gameDay, library, librarySelection, libraryOkOpens, uniformTiles, background,
                 Math.max(0, Math.min(100, skyIntensity)), settingsKeycodes, settingsKeyPanel, restoreKeyServices, wallpaperEnabled, wallpaper,
                 wallpapers, rotationMinutes, wallpaperDim, dockOpacity, wallpaperOrder, applied, festival, inputKeycodes, appKeys, stockHomeRedirect,
-                json == null ? Collections.emptyList() : raceCalendar(json), cinematic, ambientGlow, appGlow, fadeRows,
+                json == null ? Collections.emptyList() : raceCalendar(json), cinematic, posterShelf, ambientGlow, appGlow, fadeRows,
                 Math.max(0, idleClockMinutes), keyFilter, dockGlass, glowStyle, wallpaperCaptions, handleViewInputs, tileMenu, dockEvenPadding,
                 dockBand, cinematicDots, cinematicWhiteFocus, wifiStatusColor, cinematicScrim, cinematicArt, wallpaperMoods, gamepadPassthrough,
                 consumeVolumeKeys, volumePausesFilter, homeIgnoreChannelKeys, powerOnHome, homeLongPressHome, wifiStatusWarnings, topBarApps, showGreeting, headerWhite, clockWallpaper,

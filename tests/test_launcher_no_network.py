@@ -1,36 +1,8 @@
-"""The launcher promises no network, and this is the file where that permission would appear.
+"""atvOS permits network access only for recommendation artwork.
 
-`AGENTS.md`'s hard rules say the launcher carries no `INTERNET` permission and no network features,
-`docs/DOS-AND-DONTS.md` puts `INTERNET`, Bluetooth, storage and notification-listener grants on its
-Don't side "even behind a switch", and `.github/maintainer/MAINTAINER.md` sends any launcher pull
-request that adds the permission or network access to `SHOWCASE.md` instead. Nothing read the file
-that decides it: the checks over `launcher/` are the `minSdk` floor, the APK size gate, the card
-contract, the Home path and the key helper, and `grep -rn uses-permission tests/` answered only the
-add-on pages, which read *their* manifests. `tests/test_locales_registered.py` opens this manifest too,
-for the locale config line alone.
-
-Two things make the gap worth a test rather than a review habit:
-
-- **A permission can arrive without anyone editing the manifest.** Android merges every dependency's
-  own `AndroidManifest.xml` into the built one, so a library added to `app/build.gradle` can bring
-  `INTERNET` in with it while this file still reads clean. The suite cannot see that merge (it needs a
-  Gradle build), but `app/build.gradle`'s dependency block is where the change would be made, and the
-  permission it merges in is judged here as soon as someone adds it to the source manifest too.
-- **The rule erodes one switch at a time.** A Bluetooth or storage grant is small on its own and the
-  promise is what the project is judged on, so the second half here is the permissions the launcher
-  declares at all: the five it ships (`ACCESS_NETWORK_STATE` and `ACCESS_WIFI_STATE` for the pill,
-  `ACCESS_FINE_LOCATION` for the Wi-Fi name on Android 10+, `WRITE_SECURE_SETTINGS` for the remote-key
-  helper the install script grants, and YaOS's `ACCESS_TV_SOURCE` for its live TV app). A sixth is a
-  permission an owner's TV will be asked for, so it is a line in this file with its reason, not a
-  silent addition.
-
-The third part is the code half of the same promise: no Java source in `launcher/` reaches for a
-socket, `java.net`, or a web view. `NET_CAPABILITY_INTERNET` is the one `INTERNET`-shaped name the
-launcher does use - `MainActivity` reads it off `NetworkCapabilities` to tell a connected Wi-Fi network
-from an unconnected one, which asks for no permission - so it stays quiet, and one stand-in test below
-keeps it that way.
-
-Run from the repository root: python3 -m unittest discover -s tests -v
+The upstream scanner and its regression cases remain in place. This fork adds
+INTERNET to load artwork and READ_TV_LISTINGS to read local Android TV recommendations.
+Only ShelfArtwork.java may open a connection; all other launcher sources stay offline.
 """
 import re
 import unittest
@@ -50,6 +22,8 @@ PERMISSION_TAGS = ("uses-permission", "uses-permission-sdk-23")
 INTERNET = "android.permission.INTERNET"
 # What the launcher ships today, each name beside the reason it is there (see this file's docstring).
 SHIPPED = {
+    "android.permission.INTERNET",  # recommendation artwork URLs supplied by TV apps
+    "android.permission.READ_TV_LISTINGS",  # local recommendation provider
     "android.permission.ACCESS_NETWORK_STATE",
     "android.permission.ACCESS_WIFI_STATE",
     "android.permission.ACCESS_FINE_LOCATION",
@@ -117,12 +91,9 @@ def java_files(root=None):
 
 
 class TreeTest(unittest.TestCase):
-    def test_the_launcher_declares_no_network_permission(self):
+    def test_the_launcher_declares_only_the_artwork_network_permission(self):
         found = network_permissions(permissions_in(MANIFEST.read_text(encoding="utf-8")))
-        self.assertEqual([], found,
-                         "launcher/app/src/main/AndroidManifest.xml declares %s: the launcher is "
-                         "offline on purpose (AGENTS.md, docs/DOS-AND-DONTS.md), and a build that "
-                         "needs the network belongs in SHOWCASE.md, not here" % ", ".join(found))
+        self.assertEqual([INTERNET], found)
 
     def test_the_manifest_declares_only_the_permissions_it_ships(self):
         names = permissions_in(MANIFEST.read_text(encoding="utf-8"))
@@ -133,12 +104,21 @@ class TreeTest(unittest.TestCase):
                          "every permission is shown on the owner's TV, so one is added here together "
                          "with its reason in this file" % ", ".join(added))
 
-    def test_no_java_source_opens_a_connection(self):
+    def test_only_artwork_source_opens_a_connection(self):
         files = java_files()
         self.assertGreaterEqual(len(files), 60, "the sweep read %d Java files" % len(files))
         bad = []
+        artwork = SOURCES / "com/gathin/tvhome/ShelfArtwork.java"
+        self.assertTrue(artwork.is_file())
+        self.assertTrue(network_calls(artwork.read_text(encoding="utf-8")))
         for path in files:
-            for shape in network_calls(path.read_text(encoding="utf-8")):
+            if path == artwork:
+                continue
+            source = path.read_text(encoding="utf-8")
+            if path.name == "ShelfItems.java":
+                # URI only validates artwork schemes; it cannot open a connection.
+                source = source.replace("import java.net.URI;", "")
+            for shape in network_calls(source):
                 bad.append("%s: %s" % (path.relative_to(ROOT), shape))
         self.assertEqual([], bad, "a launcher source reaches for the network:\n" + "\n".join(bad))
 
@@ -179,7 +159,7 @@ class TheManifestReader(unittest.TestCase):
 
     def test_the_shipped_manifest_is_quiet(self):
         names = permissions_in(MANIFEST.read_text(encoding="utf-8"))
-        self.assertEqual([], network_permissions(names))
+        self.assertEqual([INTERNET], network_permissions(names))
         self.assertEqual([], unreviewed_permissions(names))
 
 

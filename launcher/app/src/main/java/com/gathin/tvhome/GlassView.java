@@ -36,7 +36,6 @@ public class GlassView extends View {
         radius = 20f * density;
         rim.setStyle(Paint.Style.STROKE);
         rim.setStrokeWidth(1.5f * density);
-        rim.setColor(0xCCFFFFFF);
         glow.setStyle(Paint.Style.STROKE);
         // Cache the slab as a texture. The spring only changes translation, so the GPU can
         // move it without replaying clipPath and the glow on every frame. That path is
@@ -44,20 +43,10 @@ public class GlassView extends View {
         setLayerType(LAYER_TYPE_HARDWARE, null);
     }
 
-    /** Tints the rim and the outer glow; 0 restores the plain white glass. */
+    /** Tints the outer glow; 0 restores white. The rim stays neutral. */
     void setAccent(int argb) {
-        if (argb == 0) {
-            glowRgb = 0xFFFFFF;
-            glowAlpha = 0x30;
-            rim.setColor(0xCCFFFFFF);
-        } else {
-            glowRgb = argb & 0xFFFFFF;
-            glowAlpha = 0x70;
-            // The rim is the accent lifted towards white, so the edge still reads as glass, not paint.
-            int r = (((glowRgb >> 16) & 0xFF) + 255 * 2) / 3, g = (((glowRgb >> 8) & 0xFF) + 255 * 2) / 3,
-                    b = ((glowRgb & 0xFF) + 255 * 2) / 3;
-            rim.setColor(0xE6000000 | (r << 16) | (g << 8) | b);
-        }
+        glowRgb = argb == 0 ? 0xFFFFFF : argb & 0xFFFFFF;
+        glowAlpha = argb == 0 ? 0x30 : 0x70;
         invalidate();
     }
 
@@ -65,7 +54,7 @@ public class GlassView extends View {
     void setStyle(String style) {
         flat = Config.GLASS_RIM.equals(style) || Config.GLASS_HALO.equals(style);
         halo = Config.GLASS_HALO.equals(style);
-        rim.setStrokeWidth((flat ? 2f : 1.5f) * density);
+        rim.setStrokeWidth(.75f * density);
         invalidate();
     }
 
@@ -78,8 +67,11 @@ public class GlassView extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         fill.setShader(new LinearGradient(0, 0, 0, h, 0x3DFFFFFF, 0x12FFFFFF, Shader.TileMode.CLAMP));
+        if (h > 0) rim.setShader(PreviewGlass.edgeSheen(6f * density, h - 6f * density));
         specular.setShader(new LinearGradient(0, 0, 0, h * 0.45f, 0x66FFFFFF, 0x00FFFFFF, Shader.TileMode.CLAMP));
     }
+
+    private final android.graphics.Path smoothRim = new android.graphics.Path();
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -102,7 +94,9 @@ public class GlassView extends View {
             }
         }
         if (flat) {
-            canvas.drawRoundRect(rect, radius, radius, rim);
+            smoothRim.rewind();
+            SmoothCorners.add(smoothRim, rect, radius);
+            canvas.drawPath(smoothRim, rim);
             return;
         }
 

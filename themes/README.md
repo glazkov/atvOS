@@ -87,6 +87,8 @@ A new key needs one there in the same pull request.
 
 | Key | Type | Meaning |
 |---|---|---|
+| `poster_shelf` | bool | atvOS: show recommendations from installed TV apps above the dock (`true` by default); requires `READ_TV_LISTINGS` and internet for remote artwork |
+| `youtube_wallpaper_only` | bool (`config.xml` only) | atvOS: with wallpaper enabled, show only the wallpaper behind the YouTube tile (`true` by default); read at build time, not from a theme |
 | `dock_apps` | list of package names | The dock row, in order; missing apps are skipped |
 | `fill_dock` | bool | Fill the dock slots `dock_apps` leaves free with the first grid apps (true by default); false leaves them empty |
 | `hidden_apps` | list of package names | Never shown as tiles |

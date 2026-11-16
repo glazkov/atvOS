@@ -525,6 +525,7 @@ final class AppLibraryDialog {
         if (spring != null) spring.cancel();
         View menuPanel = activity.getLayoutInflater().inflate(R.layout.popup_inputs, panel, false);
         LinearLayout rows = menuPanel.findViewById(R.id.rows);
+        menuPanel.setBackground(PreviewGlass.panel(density, menuPanel, panel));
         PopupWindow menu = new PopupWindow(menuPanel, dp(220), ViewGroup.LayoutParams.WRAP_CONTENT, true);
         actionPopup = menu;
         menu.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

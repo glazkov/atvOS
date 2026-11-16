@@ -5,6 +5,8 @@ screenshot of what it does on a real TV, and this table is where they are listed
 [cleanyour.tv/addons#switches](https://cleanyour.tv/addons#switches) both show them from here. Most
 keys from before this rule still have none; a screenshot for one of them is welcome.
 
+atvOS also keeps the imported `poster_shelf` and `youtube_wallpaper_only` on the screenshot wanted list until sanitized captures of the public build are available. The owner’s personal screenshots are not distributed. See [the atvOS guide](atvos-install.ru.md).
+
 ## Adding a key
 
 A new key needs a screenshot. Put it in `docs/switches/<key>.jpg` (an existing screenshot in the

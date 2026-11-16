@@ -26,9 +26,8 @@ import java.util.Random;
 import java.util.Set;
 
 /**
- * The clock screensaver's scene (layout dream_clock): the thin clock and date on black over a slow ambient
- * glow. Every minute the clock drifts to a new spot and the glow shifts colour, so nothing burns in; a
- * ClockRefresh keeps its TextClocks current where Android would not.
+ * The clock screensaver's scene (layout dream_clock): the clock and date on black over a slow ambient
+ * glow. The clock remains centred; the background glow shifts colour every minute.
  * Shared by ClockDream (the system screensaver) and ClockActivity (Home left idle).
  */
 final class ClockScene {
@@ -67,7 +66,6 @@ final class ClockScene {
     private final Runnable tick = new Runnable() {
         @Override
         public void run() {
-            moveClock();
             shiftGlow();
             advanceWallpaper();
             handler.postDelayed(this, MOVE_MS);
@@ -78,9 +76,26 @@ final class ClockScene {
     ClockScene(View root) {
         content = root.findViewById(R.id.dreamContent);
         clockRefresh = new ClockRefresh(content);
+        android.widget.TextClock date = root.findViewById(R.id.dreamDate);
+        date.setTransformationMethod(new android.text.method.TransformationMethod() {
+            @Override public CharSequence getTransformation(CharSequence source, View view) {
+                if (source == null || source.length() == 0) return source;
+                String text = source.toString();
+                int firstEnd = text.offsetByCodePoints(0, 1);
+                return text.substring(0, firstEnd).toUpperCase(view.getResources().getConfiguration().getLocales().get(0))
+                        + text.substring(firstEnd);
+            }
+            @Override public void onFocusChanged(View view, CharSequence source, boolean focused, int direction,
+                    android.graphics.Rect previous) { }
+        });
+        // An empty AM/PM clock must not offset the time relative to the centred date in 24-hour mode.
+        Config clockConfig = Config.load(root.getContext());
+        if (ClockFormat.is24(root.getContext(), clockConfig.clockFormat))
+            root.findViewById(R.id.dreamAmPm).setVisibility(View.GONE);
         ambient = root.findViewById(R.id.dreamAmbient);
         glow = new GradientDrawable();
         glow.setGradientType(GradientDrawable.RADIAL_GRADIENT);
+        glow.setGradientCenter(.5f, .5f);
         ambient.setBackground(glow);
         ambient.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) ->
                 glow.setGradientRadius((r - l) * 0.55f));
@@ -91,7 +106,6 @@ final class ClockScene {
     void start() {
         content.setAlpha(0f);
         content.post(() -> {
-            placeClock();
             content.animate().alpha(1f).setDuration(1200).start();
         });
         handler.removeCallbacks(tick);
@@ -225,28 +239,6 @@ final class ClockScene {
         int[] sun = WallpaperMood.sun(now.toLocalDate(), latitude, longitude, ZoneId.systemDefault());
         return WallpaperMood.select(rotation, moods,
                 WallpaperMood.timeOfDay(now.getHour() * 60 + now.getMinute(), sun[0], sun[1]));
-    }
-
-    private void moveClock() {
-        content.animate().alpha(0f).setDuration(900).withLayer().withEndAction(() -> {
-            placeClock();
-            content.animate().alpha(1f).setDuration(1200).withLayer().start();
-        }).start();
-    }
-
-    /** A random spot that keeps the whole clock on screen, with the glow centred behind it. */
-    private void placeClock() {
-        View parent = (View) content.getParent();
-        int maxX = Math.max(0, parent.getWidth() - content.getWidth());
-        int maxY = Math.max(0, parent.getHeight() - content.getHeight());
-        float x = maxX * (0.1f + 0.8f * random.nextFloat());
-        float y = maxY * (0.1f + 0.8f * random.nextFloat());
-        content.setX(x);
-        content.setY(y);
-        if (parent.getWidth() > 0 && parent.getHeight() > 0) {
-            glow.setGradientCenter((x + content.getWidth() / 2f) / parent.getWidth(),
-                    (y + content.getHeight() / 2f) / parent.getHeight());
-        }
     }
 
     private void shiftGlow() {

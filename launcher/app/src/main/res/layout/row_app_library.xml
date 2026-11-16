@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="84dp">
-    <TextView android:id="@+id/btnLibrary" style="@style/TopButton"
-        android:layout_gravity="center" android:text="@string/app_library"
+    <TextView android:id="@+id/btnLibrary" style="@style/TopButtonIcon"
+        android:layout_gravity="bottom|center_horizontal" android:contentDescription="@string/app_library"
+        android:layout_marginStart="0dp"
         android:drawableStart="@drawable/ic_apps_pill" />
 </FrameLayout>

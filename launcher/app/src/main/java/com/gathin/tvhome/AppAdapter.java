@@ -25,13 +25,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 import android.view.animation.DecelerateInterpolator;
-import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.widget.TextViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -97,19 +97,24 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
+    // Keep the existing cell sizing while allowing the active tile to grow into the gap.
     static final float FOCUS_SCALE = 1.10f;
+    static final float ACTIVE_SCALE = 92f / 75.6f;
+    static final float ACTIVE_RADIUS_DP = 20f;
     /** Design size of a tile (dp); tiles shrink from here when the columns don't fit, see tileWidthPx. */
-    static final float DESIGN_W_DP = 180f, DESIGN_H_DP = 101f;
+    static final float DESIGN_W_DP = 180f, DESIGN_H_DP = 108f;
 
     /**
      * Tile width for a grid of this inner width: the cell minus room for the focus zoom and the glass
      * highlight, capped at the design size so 4 columns on a 1080p TV look exactly as before.
      */
     static int tileWidthPx(int innerWidthPx, int columns, float density) {
-        int design = Math.round(DESIGN_W_DP * density);
+        // TCL: six 126dp cards, separated by 24dp gaps in 150dp cells.
+        int design = Math.round((columns == 6 ? 126f : DESIGN_W_DP) * density);
         if (innerWidthPx <= 0 || columns <= 0) return design;
         int cell = innerWidthPx / columns;
-        int fit = (int) ((cell - 12 * density) / FOCUS_SCALE);
+        int fit = columns == 6 ? cell - Math.round(24 * density)
+                : (int) ((cell - 12 * density) / FOCUS_SCALE);
         return Math.max(Math.round(80 * density), Math.min(design, fit));
     }
 
@@ -304,6 +309,10 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
             // The icon is only drawn (and sampled for the glow) when there is no banner, so a tile with a
             // banner skips loading and decoding it.
+            if (banner != null && (pkg.equals("watch.kino")
+                    || pkg.equals("com.wisdomlogix.send.files.tv.fileshare")
+                    || pkg.equals("io.github.maxhayim.brightness"))) banner = paddedBanner(banner,
+                            pkg.equals("com.wisdomlogix.send.files.tv.fileshare"), pkg.equals("watch.kino") ? 10 : 20);
             Drawable icon = banner == null ? ri.loadIcon(pm) : null;
             if (card != null) {
                 fresh.add(new Entry(Entry.CARD, label, component, banner, icon, card.caption, card.accent));
@@ -343,6 +352,42 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         items.clear();
         items.addAll(fresh);
         notifyDataSetChanged();
+    }
+
+    /** Owner-selected banners: safe insets, or full-height left-aligned art for Send Files. */
+    private Drawable paddedBanner(Drawable original, boolean fullHeightLeft, int inset) {
+        Drawable image = original.getConstantState() != null
+                ? original.getConstantState().newDrawable().mutate() : original;
+        Rect saved = new Rect(image.getBounds());
+        Bitmap sample = Bitmap.createBitmap(32, 20, Bitmap.Config.ARGB_8888);
+        image.setBounds(0, 0, 32, 20);
+        image.draw(new Canvas(sample));
+        int top = mixEdges(sample.getPixel(1, 1), sample.getPixel(30, 1));
+        int bottom = mixEdges(sample.getPixel(1, 18), sample.getPixel(30, 18));
+        sample.recycle();
+        int width = 320, height = 192;
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        GradientDrawable background = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
+                new int[]{top, bottom});
+        background.setBounds(0, 0, width, height);
+        background.draw(canvas);
+        int iw = Math.max(1, image.getIntrinsicWidth()), ih = Math.max(1, image.getIntrinsicHeight());
+        float scale = fullHeightLeft ? (float) height / ih
+                : Math.min((width - 2f * inset) / iw, (height - 2f * inset) / ih);
+        int w = Math.round(iw * scale), h = Math.round(ih * scale);
+        // Canvas is 320px wide, displayed at 126dp on a normal card.
+        int left = fullHeightLeft ? -Math.round(2f * width / 126f) : (width - w) / 2;
+        int topInset = fullHeightLeft ? 0 : (height - h) / 2;
+        image.setBounds(left, topInset, left + w, topInset + h);
+        image.draw(canvas);
+        image.setBounds(saved);
+        return new android.graphics.drawable.BitmapDrawable(ctx.getResources(), bitmap);
+    }
+
+    private static int mixEdges(int a, int b) {
+        return Color.rgb((Color.red(a) + Color.red(b)) / 2,
+                (Color.green(a) + Color.green(b)) / 2, (Color.blue(a) + Color.blue(b)) / 2);
     }
 
     /** icon_tiles: the app's icon centred on a dark banner-shaped tile, for apps whose own banner crops badly. */
@@ -400,7 +445,10 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (viewType == 1) {
             View row = LayoutInflater.from(ctx).inflate(R.layout.row_app_library, parent, false);
+            fitLibraryRow(row, parent);
             View button = row.findViewById(R.id.btnLibrary);
+            TextViewCompat.setLineHeight((TextView) button,
+                    Math.round(18 * ctx.getResources().getDisplayMetrics().scaledDensity));
             button.setOnClickListener(v -> listener.onLibraryRequested());
             button.setOnFocusChangeListener((v, focused) -> { if (focused) listener.onLibraryFocused(); });
             button.setOnKeyListener((v, key, event) -> {
@@ -455,10 +503,27 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot);
     }
 
+    private void fitLibraryRow(View row, ViewGroup parent) {
+        if (!dockRow || singleRow) return;
+        float density = ctx.getResources().getDisplayMetrics().density;
+        int width = parent.getWidth() > 0 ? parent.getWidth() : parent.getMeasuredWidth();
+        int height = parent.getHeight() > 0 ? parent.getHeight() : parent.getMeasuredHeight();
+        int inner = width - parent.getPaddingLeft() - parent.getPaddingRight();
+        int tileW = tileWidthPx(inner, height, dockSize, rowsBelowDock, dockTitle, dockRow, density);
+        int tileH = tileHeightPx(tileW);
+        int rows = (appCount() + dockSize - 1) / dockSize;
+        row.getLayoutParams().height = SelectionLayout.libraryHeightPx(
+                height, tileH, itemHeightPx(tileH, density), rows, density);
+    }
+
     @Override
     @SuppressWarnings("deprecation")
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        if (isLibraryAt(position)) return;
+        if (isLibraryAt(position)) {
+            if (holder.itemView.getParent() instanceof ViewGroup)
+                fitLibraryRow(holder.itemView, (ViewGroup) holder.itemView.getParent());
+            return;
+        }
         Holder h = (Holder) holder;
         Entry e = items.get(position);
         if (e.kind == Entry.EMPTY) {
@@ -480,10 +545,12 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         boolean dockKind = DockSlots.inDockRow(dockRow, singleRow, position, dockSize);
         h.name.setVisibility(dockKind && restNameAlpha == 0f ? View.INVISIBLE : View.VISIBLE);
         h.inDock = dockKind;
+        ((SmoothCard) h.card).setGlassSurface(dockRow && !dockKind);
         boolean focused = h.card.isFocused();   // a rebind after reload() can hit the focused tile
         h.name.setAlpha(focused ? 1f : restNameAlpha);
         h.card.setScaleX(focused && animations ? focusScale() : 1f);
         h.card.setScaleY(focused && animations ? focusScale() : 1f);
+        h.card.invalidate();
         h.card.setTranslationY(focused && advancedEffects && !dockKind ? -4f * ctx.getResources().getDisplayMetrics().density : 0f);
         h.card.setTranslationZ(focused && advancedEffects ? 8f * ctx.getResources().getDisplayMetrics().density : 0f);
         h.banner.setScaleX(focused && advancedEffects ? 1.035f : 1f);
@@ -677,7 +744,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     float focusScale() {
-        return !animations ? 1f : advancedEffects ? 1.12f : 1.10f;
+        return !animations ? 1f : ACTIVE_SCALE;
     }
 
     /** A vivid colour sampled from the app's banner (or icon), cached per entry; a card's accent when it set one. */
@@ -895,9 +962,9 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return Color.HSVToColor(hsv);
     }
 
-    /** Corner radius for a tile of this width: 16dp at the design width, proportionally less when smaller. */
+    /** TCL normal corner radius: 18dp at the agreed 126dp card width. */
     static float cornerRadius(int tileWidthPx, float density) {
-        return 16f * density * Math.min(1f, tileWidthPx / (DESIGN_W_DP * density));
+        return 16f * density * Math.min(1f, tileWidthPx / (126f * density));
     }
 
     static final class Holder extends RecyclerView.ViewHolder {
@@ -926,6 +993,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             icon = v.findViewById(R.id.icon);
             label = v.findViewById(R.id.label);
             name = v.findViewById(R.id.name);
+            TextViewCompat.setLineHeight(name, Math.round(16 * v.getResources().getDisplayMetrics().scaledDensity));
             this.animations = animations;
             this.advancedEffects = advancedEffects;
             this.reducedMotion = reducedMotion;
@@ -936,11 +1004,13 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             card.setOutlineProvider(new ViewOutlineProvider() {
                 @Override
                 public void getOutline(View view, Outline outline) {
-                    // 16dp at the design width, scaled down with the tile so small tiles keep the same shape.
-                    outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), cornerRadius(view.getWidth(), density));
+                    float radius = view.isFocused() && animations
+                            ? ACTIVE_RADIUS_DP * density / ACTIVE_SCALE : cornerRadius(view.getWidth(), density);
+                    outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
                 }
             });
-            card.setClipToOutline(true);
+            ((SmoothCard) card).setFocusedRadius(animations ? ACTIVE_RADIUS_DP * density / ACTIVE_SCALE : 0f);
+            card.animate().setUpdateListener(animation -> card.invalidate());
 
             card.setOnKeyListener((view, keyCode, event) -> {
                 if (event.getAction() != KeyEvent.ACTION_DOWN) return false;
@@ -951,10 +1021,12 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             });
 
             card.setOnFocusChangeListener((view, focused) -> {
+                view.invalidateOutline();
+                view.invalidate();
                 view.animate().cancel();
                 banner.animate().cancel();
                 name.animate().cancel();
-                float scale = !animations ? 1f : advancedEffects ? 1.12f : 1.10f;
+                float scale = !animations ? 1f : ACTIVE_SCALE;
                 float s = focused ? scale : 1f;
                 if (!animations) {
                     view.setScaleX(1f);
@@ -978,21 +1050,20 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     // Same place as the full motion's slide ends: the layout's -6dp is only its starting point, and
                     // left there the name overlaps the zoomed tile.
                     // Only on focus: snapping it back to -6dp while it fades out would jump it up over the tile.
-                    if (focused) name.setTranslationY(density * 4f);
+                    if (focused) name.setTranslationY(density * 3f);
                 } else {
                     view.animate().scaleX(s).scaleY(s)
                             .translationY(focused && advancedEffects && !inDock ? -4f * density : 0f)
                             .translationZ(focused && advancedEffects ? 8f * density : 0f)
                             .setDuration(advancedEffects ? (focused ? 220 : 170) : (focused ? 260 : 180))
-                            .setInterpolator(focused && !overshoot ? new DecelerateInterpolator(1.5f)
-                                    : new OvershootInterpolator(focused ? (advancedEffects ? 0.7f : 1.6f) : 0f))
+                            .setInterpolator(Motion.cardFocusZoom(focused && overshoot))
                             .withLayer().start();
                     if (advancedEffects) {
                         banner.animate().scaleX(focused ? 1.035f : 1f).scaleY(focused ? 1.035f : 1f)
-                                .setDuration(280).start();
+                                .setDuration(280).setInterpolator(Motion.cardFocusZoom(focused && overshoot)).start();
                     }
                     name.animate().alpha(focused ? 1f : restNameAlpha)
-                            .translationY(focused ? density * 4f : -density * 6f)
+                            .translationY(focused ? density * 3f : -density * 6f)
                             .setDuration(220).start();
                 }
                 int pos = getBindingAdapterPosition();
