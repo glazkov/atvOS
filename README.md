@@ -21,129 +21,124 @@
 ---
 
 <p align="center">
-  <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
+  <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV: телевизор без рекламы. Отключение лишних приложений на Android TV и Google TV по Wi-Fi и простой домашний экран в стиле Apple TV. Без root, кабеля и удаления приложений; восстановление одной командой." width="800"></a>
 </p>
 
 <p align="center">
-  Read in: <a href="README.he.md" lang="he" dir="rtl">עברית</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">正體中文</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt-BR.md">Português</a> · <a href="README.nl.md">Nederlands</a> · <a href="README.de.md">Deutsch</a> · <a href="README.uk.md">Українська</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.uz.md">Oʻzbekcha</a> · <a href="README.fr.md">Français</a> · <a href="README.es.md">Español</a>
+  Другие переводы исходного CleanYourTV: <a href="README.he.md" lang="he" dir="rtl">עברית</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">正體中文</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt-BR.md">Português</a> · <a href="README.nl.md">Nederlands</a> · <a href="README.de.md">Deutsch</a> · <a href="README.uk.md">Українська</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.uz.md">Oʻzbekcha</a> · <a href="README.fr.md">Français</a> · <a href="README.es.md">Español</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Gathin23/cleanyourtv/stargazers"><img src="https://img.shields.io/github/stars/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Stars"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/pulls?q=is%3Amerged"><img src="https://img.shields.io/github/issues-search?query=repo%3AGathin23%2Fcleanyourtv%20is%3Apr%20is%3Amerged&style=flat&cacheSeconds=1800&label=merged%20PRs&color=cfffcf&labelColor=15181e" alt="Merged PRs"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/network/members"><img src="https://img.shields.io/github/forks/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Forks"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://img.shields.io/github/contributors/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Contributors"></a>
-  <a href="https://buymeacoffee.com/gathint"><img src="https://img.shields.io/badge/support-%E2%9D%A4-ff5e8a?style=flat&labelColor=15181e" alt="Support, buy me a coffee"></a>
-  <a href="https://www.producthunt.com/products/cleanyourtv"><img src="https://img.shields.io/badge/Product%20Hunt-upvote%20%E2%96%B2-da552f?style=flat&logo=producthunt&logoColor=white&labelColor=15181e" alt="CleanYourTV on Product Hunt"></a>
+  <a href="https://github.com/Gathin23/cleanyourtv/stargazers"><img src="https://img.shields.io/github/stars/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Звёзды исходного проекта"></a>
+  <a href="https://github.com/Gathin23/cleanyourtv/pulls?q=is%3Amerged"><img src="https://img.shields.io/github/issues-search?query=repo%3AGathin23%2Fcleanyourtv%20is%3Apr%20is%3Amerged&style=flat&cacheSeconds=1800&label=merged%20PRs&color=cfffcf&labelColor=15181e" alt="Принятые изменения"></a>
+  <a href="https://github.com/Gathin23/cleanyourtv/network/members"><img src="https://img.shields.io/github/forks/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Форки"></a>
+  <a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://img.shields.io/github/contributors/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Участники"></a>
+  <a href="https://buymeacoffee.com/gathint"><img src="https://img.shields.io/badge/support-%E2%9D%A4-ff5e8a?style=flat&labelColor=15181e" alt="Поддержать автора CleanYourTV"></a>
+  <a href="https://www.producthunt.com/products/cleanyourtv"><img src="https://img.shields.io/badge/Product%20Hunt-upvote%20%E2%96%B2-da552f?style=flat&logo=producthunt&logoColor=white&labelColor=15181e" alt="CleanYourTV на Product Hunt"></a>
 </p>
 
 <p align="center">
-  <a href="docs/PRESS.md"><img src="docs/card.jpg" alt="481 TV models · 131 brands · 31 languages · 572 KB launcher. Featured in TechCrunch, TechRadar, Tom's Guide, Mashable, Android Authority, XDA, FlatpanelsHD, It's FOSS, Phandroid, GIGAZINE, Xataka, WinFuture, Frandroid, Macitynet, Techaeris, TechPP and 530 more: 546 articles from 57 countries. Before: stock Google TV home with a sponsored ad. After: the Clean Your TV launcher. #1 trending repo of the week, Oct 19–25 2026, via trendshift.io." width="800"></a>
+  <a href="docs/PRESS.md"><img src="docs/card.jpg" alt="481 TV models · 131 brands · 31 languages · 572 KB launcher. Статистика исходного CleanYourTV: 546 публикаций в 57 странах; сравнение штатного Google TV и CleanYourTV. Первое место в недельном рейтинге GitHub за 19–25 октября 2026 года по данным trendshift.io." width="800"></a>
 </p>
 
-## Start here
+<a id="start-here"></a>
 
-| You have | Go to |
+## С чего начать
+
+| Что у вас | Куда перейти |
 |---|---|
-| **An Android TV or Google TV** | [Quick start](#quick-start): a coding assistant does the work in about fifteen minutes. |
-| **A Samsung, LG, Roku, Vizio or Hisense VIDAA TV** | [cleanyour.tv/not-android](https://cleanyour.tv/not-android): CleanYourTV can't run there, but you can turn off the tracking with your remote. |
-| **A phone or laptop, no coding agent** | One of the [community apps](https://cleanyour.tv/app) for Android phones, Mac and Windows, made by independent developers. |
-| **Want to see it first** | [What you get](#what-you-get): screenshots of the new home screen. |
+| **Android TV или Google TV** | [Быстрый старт](#quick-start): помощник по программированию выполнит настройку примерно за пятнадцать минут. |
+| **Samsung, LG, Roku, Vizio или Hisense VIDAA** | [cleanyour.tv/not-android](https://cleanyour.tv/not-android): CleanYourTV на них не работает, но отслеживание можно отключить пультом. |
+| **Телефон или ноутбук, без помощника по программированию** | [Приложения сообщества](https://cleanyour.tv/app) для Android, Mac и Windows от независимых разработчиков. |
+| **Хотите сначала посмотреть** | [Что получится](#what-you-get): снимки домашнего экрана исходного проекта. |
 
-**Official links:** [cleanyour.tv](https://cleanyour.tv) and this repo. Other domains using the name, such as
-cleanyourtv.com, are not run by this project ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)).
-CleanYourTV publishes no app in any app store, and clean-your-tv.net is not ours either.
+**Официальные ссылки исходного CleanYourTV:** [cleanyour.tv](https://cleanyour.tv) и репозиторий Gathin23/cleanyourtv. Другие домены с похожими названиями, например cleanyourtv.com, не принадлежат исходному проекту ([#1004](https://github.com/Gathin23/cleanyourtv/issues/1004)). CleanYourTV не публикует приложения в магазинах; clean-your-tv.net также не относится к проекту. Этот репозиторий — самостоятельный форк atvOS.
 
-[How it works](#how-it-works) · [Quick start](#quick-start) · [What you get](#what-you-get) ·
-[Supported TVs](#supported-tvs) · [Doing it by hand](#doing-it-by-hand) · [The launcher](#the-launcher) ·
-[Restoring](#restoring-your-tv) · [Firmware updates](#after-a-firmware-update) ·
-[Questions](#questions-people-ask) · [Contributing](#contributing)
+[Как это работает](#how-it-works) · [Быстрый старт](#quick-start) · [Что получится](#what-you-get) · [Поддерживаемые телевизоры](#supported-tvs) · [Ручная настройка](#doing-it-by-hand) · [Лаунчер](#the-launcher) · [Восстановление](#restoring-your-tv) · [Обновления прошивки](#after-a-firmware-update) · [Вопросы и ответы](#questions-people-ask) · [Как помочь проекту](#contributing)
 
-## How it works
+<a id="how-it-works"></a>
 
-Android TVs have the same debug bridge as Android phones. Switch on USB debugging in the TV's
-developer options, allow your computer once, and the rest is standard Android tooling:
+## Как это работает
 
-| Step | What happens |
+В Android TV есть тот же интерфейс отладки, что и в телефонах Android. Включите USB-отладку в настройках разработчика, один раз разрешите доступ компьютеру — дальше используются стандартные инструменты Android:
+
+| Шаг | Что происходит |
 |---|---|
-| **Back&nbsp;up** | The list of installed packages and settings. |
-| **Disable** | The manufacturer's telemetry, ad services, content rows and preloaded junk, with `pm disable-user`. Nothing is uninstalled, so a restore script can undo every step. |
-| **Install** | A small native launcher, made the default home screen. |
+| **Резервная копия** | Сохраняются список установленных пакетов и настройки. |
+| **Отключение лишнего** | Телеметрия производителя, рекламные службы, рекомендательные ленты и предустановленные приложения отключаются через `pm disable-user`. Ничего не удаляется; скрипт восстановления позволяет отменить изменения. |
+| **Установка** | Небольшой нативный лаунчер становится домашним экраном по умолчанию. |
 
-**No root, no cable, nothing uninstalled, and a one-line restore if you change your mind.**
+**Без root, кабеля и удаления приложений. Вернуться назад можно одной командой.**
 
-The bloat differs by brand, so the prompt has your coding assistant discover it on your TV and ask
-before touching anything you might use.
+Набор лишних приложений зависит от производителя. Поэтому инструкция предлагает помощнику сначала изучить ваш телевизор и спросить о функциях, которыми вы пользуетесь.
 
-## Quick start
+<a id="quick-start"></a>
 
-| You have | Do this |
+## Быстрый старт
+
+| Что у вас | Что делать |
 |---|---|
-| **A computer** | Use the prompt with a coding assistant: the three steps below. |
-| **A computer, no coding assistant** | Run the three steps yourself: the commands are in [Doing it by hand](#doing-it-by-hand). |
-| **A phone or laptop, no coding assistant** | Pick one of the [community apps](https://cleanyour.tv/app): free, open-source apps built on these TV lists by independent developers. |
+| **Компьютер** | Передайте инструкцию помощнику по программированию: три шага ниже. |
+| **Компьютер без такого помощника** | Выполните те же шаги самостоятельно: команды приведены в разделе [Ручная настройка](#doing-it-by-hand). |
+| **Телефон или ноутбук без такого помощника** | Выберите [приложение сообщества](https://cleanyour.tv/app): бесплатные приложения с открытым кодом от независимых разработчиков используют списки телевизоров CleanYourTV. |
 
-The three steps below are written for a coding assistant: the computer needs to be on the same Wi-Fi as
-the TV, with a shell on it, plus Python 3, a JDK from 17 through 22, and Android SDK platform 34
-with build-tools 34 (the assistant builds the launcher there).
-Without an assistant, [Doing it by hand](#doing-it-by-hand)
-is the same job, run by you, and it has the install commands.
+Следующие три шага рассчитаны на помощника по программированию. Компьютер должен находиться в одной сети Wi-Fi с телевизором и иметь командную оболочку, Python 3, JDK версии от 17 до 22, Android SDK platform 34 и build-tools 34. Помощник соберёт лаунчер на этом компьютере. Без помощника используйте раздел [Ручная настройка](#doing-it-by-hand), где приведены команды установки.
 
-Any of these work: Claude Code (on [0G Private Computer](https://pc.0g.ai/?utm_source=cleanyourtv&utm_medium=github&utm_campaign=readme) or an [Anthropic plan](https://claude.com/pricing)), [Codex](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Antigravity CLI](https://antigravity.google/product/antigravity-cli) or [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
+Подойдут Claude Code (на [0G Private Computer](https://pc.0g.ai/?utm_source=cleanyourtv&utm_medium=github&utm_campaign=readme) или с [подпиской Anthropic](https://claude.com/pricing)), [Codex](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Antigravity CLI](https://antigravity.google/product/antigravity-cli) и [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
-| Where | What to do |
+| Где | Что сделать |
 |---|---|
-| **1. On the TV** | Settings → Device Preferences → About → press OK on **Build** seven times → back → Developer options → **USB debugging** on. If you see a Network or ADB debugging toggle, turn that on too. Keep the TV on. |
-| **2. On your computer** | Clone the repo and open that folder in your assistant (`git clone https://github.com/Gathin23/cleanyourtv`), then paste [`PROMPT.md`](PROMPT.md) and fill in your TV model. |
-| **3. Follow along** | Accept "Allow USB debugging?" on the TV, then answer the checklist: which apps you use, the dock size and app order, whether to keep the voice assistant, Chromecast and updates. |
+| **1. На телевизоре** | Настройки → Настройки устройства → Об устройстве → семь раз нажмите OK на пункте **Сборка** → назад → Для разработчиков → включите **USB-отладку**. Если есть отдельный переключатель сетевой или ADB-отладки, включите и его. Оставьте телевизор включённым. |
+| **2. На компьютере** | Клонируйте репозиторий исходного проекта и откройте папку в помощнике (`git clone https://github.com/Gathin23/cleanyourtv`), затем вставьте [`PROMPT.md`](PROMPT.md) и укажите модель телевизора. Для установки именно atvOS используйте [инструкцию этого форка](docs/atvos-install.ru.md). |
+| **3. Во время настройки** | Подтвердите на ТВ запрос «Разрешить USB-отладку?», затем ответьте, какими приложениями пользуетесь, сколько значков нужно в доке и в каком порядке, нужно ли сохранить голосового помощника, Chromecast и обновления. |
 
-Cloning matters: the assistant reuses this repo's `tools/disable.sh` and `launcher/build-and-install.sh`
-instead of writing its own, and that is where the backup, the Home guard and the restore record live.
+Клонирование важно: помощник использует готовые `tools/disable.sh` и `launcher/build-and-install.sh`. В них уже предусмотрены резервное копирование, защита домашнего экрана и запись состояния для восстановления.
 
-The assistant backs up, debloats, builds and installs the launcher, and checks each step with
-screenshots pulled from the TV. With this repo as context it takes about fifteen minutes.
+Помощник сохраняет резервную копию, отключает лишнее, собирает и устанавливает лаунчер, проверяя каждый этап снимками с телевизора. С готовым репозиторием настройка занимает примерно пятнадцать минут.
 
-## What you get
+<a id="what-you-get"></a>
 
-A home screen that looks like an Apple TV and gets out of the way:
+## Что получится
 
-| Part | What it looks like |
+Ниже — возможности и снимки исходного CleanYourTV. Отличия atvOS описаны в начале страницы: в нём вместо крупного названия приложения используется полка с карточками и постоянными подписями.
+
+| Элемент | Как выглядит |
 |---|---|
-| **A pitch-black home** | A dock of your four favourite apps in a rounded band, where Apple TV puts it. |
-| **A top shelf** | Names the focused app in large type, with an ambient glow in a colour taken from its artwork. |
-| **The rest of your apps in a grid** | Slides up when you press Down. |
-| **One floating glass highlight** | Springs from tile to tile. The focused tile lifts and shows its name. |
-| **Three frosted buttons** | Inputs (HDMI ports under the names you gave them in the TV's settings, AV, Live TV), Wi-Fi or Ethernet with the network name, Settings. |
-| **A greeting, a thin clock and the date** | In [Outfit](https://fonts.google.com/specimen/Outfit), and a matching Clock screensaver. Set `show_stats` in config or a theme for one line under the clock: CPU, free memory and free storage. It stays off unless you turn it on, and it refreshes only while Home is on screen. |
-| **Themes and module cards** | Themes change colours, wallpaper, dock and columns without a rebuild, and module cards let other apps plug a tile in, only with your say-so. |
+| **Чёрный домашний экран** | Док с четырьмя любимыми приложениями в скруглённой полосе, как на Apple TV. |
+| **Верхняя область** | Крупное название выбранного приложения и мягкая подсветка, цвет которой берётся из его изображения. |
+| **Сетка остальных приложений** | Выдвигается вверх при нажатии «Вниз». |
+| **Стеклянное выделение** | Плавно перемещается между плитками. Выбранная плитка приподнимается, под ней появляется название. |
+| **Три полупрозрачные кнопки** | Источники — HDMI с заданными в настройках названиями, AV и эфирное ТВ; Wi-Fi или Ethernet с названием сети; настройки. |
+| **Приветствие, тонкие часы и дата** | Шрифт [Outfit](https://fonts.google.com/specimen/Outfit) и заставка с часами в том же стиле. `show_stats` добавляет строку с загрузкой CPU, свободной оперативной памятью и местом в хранилище. По умолчанию строка выключена; данные обновляются только на домашнем экране. |
+| **Темы и карточки модулей** | Темы меняют цвета, обои, док и число колонок без пересборки. Другие приложения могут добавлять собственные карточки только с вашего разрешения. |
 
-And a TV that stops working against you: no sponsored rows, no "Discover" nags, no analytics
-phoning home, no apps you never asked for.
+На домашнем экране нет рекламных рядов и навязчивых предложений «Узнать больше». Лишние приложения и телеметрия отключаются выбранным для вашей модели списком. В atvOS доступ к сети используется для обложек рекомендаций.
 
 | | |
 |---|---|
-| ![The top shelf names the focused app over an ambient glow in its colour](docs/focus-2-up-netflix.png) | ![The Inputs popup: HDMI ports with what is connected, AV and Live TV](docs/inputs-menu.jpg) |
-| *Top shelf and ambient glow* | *Inputs: HDMI with connection state, AV, Live TV* |
-| ![The grid with the glass highlight on a tile and its name beneath](docs/focus-1-fancode.png) | ![The Clock screensaver: a thin clock drifting over the glow](docs/clock-screensaver.png) |
-| *The grid, one glass highlight, the tile's name* | *Clock screensaver, drifts so nothing burns in* |
-| ![The aurora theme: a wallpaper and tinted pills, pushed without a rebuild](themes/aurora/screenshot.jpg) | ![Six columns and a six-app dock from a theme's config.json](themes/six-columns/screenshot.jpg) |
-| *Aurora theme, pushed with `tools/theme.sh`* | *Six columns and a six-app dock, same launcher* |
-| ![Moving a tile: held OK, chose Move, the tile is picked up and the others dim](docs/tile-move.jpg) | ![The App library: installed apps, one press adds an app back to Home](docs/app-library.jpg) |
-| *Hold OK on a tile, Move: arrows carry it, Back puts it down* | *App library: one press puts a removed app back on Home* |
+| ![Верхняя область с названием приложения и подсветкой в его цвет](docs/focus-2-up-netflix.png) | ![Меню источников: HDMI, AV и эфирное ТВ](docs/inputs-menu.jpg) |
+| *Верхняя область и фоновая подсветка* | *Источники: HDMI со статусом подключения, AV и эфирное ТВ* |
+| ![Сетка приложений со стеклянным выделением и названием плитки](docs/focus-1-fancode.png) | ![Заставка с тонкими часами на фоне подсветки](docs/clock-screensaver.png) |
+| *Сетка, стеклянное выделение и подпись плитки* | *Часы медленно перемещаются, чтобы избежать выгорания экрана* |
+| ![Тема Aurora с обоями и цветными кнопками](themes/aurora/screenshot.jpg) | ![Шесть колонок и док на шесть приложений из config.json темы](themes/six-columns/screenshot.jpg) |
+| *Тема Aurora, применённая через `tools/theme.sh`* | *Шесть колонок и док на шесть приложений в том же лаунчере* |
+| ![Перемещение плитки после удержания OK и выбора соответствующего пункта](docs/tile-move.jpg) | ![Библиотека установленных приложений](docs/app-library.jpg) |
+| *Удерживайте OK → «Переместить»: стрелки двигают плитку, «Назад» ставит её на место* | *Одно нажатие возвращает удалённый с домашнего экрана ярлык* |
 
-## Supported TVs
+<a id="supported-tvs"></a>
 
-Anything running **Android TV** or **Google TV**.
+## Поддерживаемые телевизоры
 
-| Platform | What works |
+Исходный проект рассчитан на устройства с **Android TV** или **Google TV**. Сборка atvOS проверялась на TCL G10 с Android 12; совместимость других моделей нужно проверять отдельно.
+
+| Платформа | Что работает |
 |---|---|
-| **Android TV, Google TV** | The debloat and the launcher. |
-| **Fire TV** | The debloat half only, since Fire OS will not hand Home to a third-party launcher. And on the 2015 Fire TV Box (Fire OS 5) even that half fails: every `pm` route is refused. |
-| **A few China-market TCL sets** | They refuse to install any launcher at all; their lists say so in the header. |
-| **Samsung (Tizen), LG (webOS), Roku, Vizio, Hisense VIDAA** | Not supported (no ADB). Turn off the tracking instead: [cleanyour.tv/not-android](https://cleanyour.tv/not-android). See [SHOWCASE.md](SHOWCASE.md#other-platforms-fire-tv-and-lg-webos) for four webOS ports, and [docs/devices/samsung-tizen.md](docs/devices/samsung-tizen.md) for what a 2021 Samsung set answers over Wi-Fi (no ADB, so no `pm disable-user`) if you are weighing a Tizen port. For an LG webOS 26 set, [docs/devices/lg-webos.md](docs/devices/lg-webos.md) covers the settings and DNS filtering with a firewall rule against other resolvers. |
+| **Android TV, Google TV** | Отключение лишних пакетов и лаунчер. |
+| **Fire TV** | Только отключение лишнего: Fire OS не передаёт домашний экран стороннему лаунчеру. На Fire TV Box 2015 года с Fire OS 5 не работает и это — все способы через `pm` отклоняются. |
+| **Некоторые TCL для китайского рынка** | Прошивка запрещает установку любых лаунчеров; это указано в заголовках соответствующих списков. |
+| **Samsung (Tizen), LG (webOS), Roku, Vizio, Hisense VIDAA** | Не поддерживаются: нет ADB. Вместо этого можно [отключить отслеживание](https://cleanyour.tv/not-android). Четыре варианта для webOS перечислены в [SHOWCASE.md](SHOWCASE.md#other-platforms-fire-tv-and-lg-webos). Результаты проверки Samsung 2021 года по Wi-Fi описаны в [docs/devices/samsung-tizen.md](docs/devices/samsung-tizen.md): ADB нет, поэтому `pm disable-user` недоступен. Для LG webOS 26 см. [docs/devices/lg-webos.md](docs/devices/lg-webos.md): настройки, фильтрация DNS и блокировка обходных DNS-серверов межсетевым экраном. |
 
-Tested lists from contributors, one folder per model in [`examples/`](examples/). The brands with the
-most lists, each linked to its models on the website:
+Проверенные участниками списки лежат в [`examples/`](examples/), по одной папке на модель. Ниже — производители с наибольшим числом списков и ссылки на их модели. Этот блок формируется автоматически из данных репозитория.
 
 <!-- tv-brands:start: generated by tools/gen_tables.py from examples/*/tv.json; edit those, not this -->
 
@@ -173,29 +168,22 @@ Alwtniet, Anker Nebula, BYINTEK, Chihi, Epson, Gadnic, HOTACK, HY320, JMGO, Magc
 
 <!-- tv-brands:end -->
 
-**Find your TV:** search [cleanyour.tv/tvs](https://cleanyour.tv/tvs) or the full table in
-[examples/README.md](examples/README.md).
+**Найдите свой телевизор:** поиск на [cleanyour.tv/tvs](https://cleanyour.tv/tvs) или полная таблица в [examples/README.md](examples/README.md).
 
-Your TV not here? The prompt discovers the bloat itself. Add your list afterwards and the next
-person with your model skips that step: [CONTRIBUTING.md](CONTRIBUTING.md).
+Модели ещё нет? Помощник может изучить набор приложений самостоятельно. Затем поделитесь списком, чтобы следующему владельцу такой модели не пришлось повторять поиск: [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Doing it by hand
+<a id="doing-it-by-hand"></a>
 
-Everything the assistant does, you can run yourself. Two things have to be on the computer first:
+## Ручная настройка
 
-| You need | For |
+Всё, что выполняет помощник, можно сделать самостоятельно. Сначала установите необходимые инструменты:
+
+| Что нужно | Для чего |
 |---|---|
-| **Python 3** (any 3.x) | The tools. The venv command below installs what they import. |
-| **JDK 17 through 22** (a full JDK, including `jlink`) and **Android SDK platform 34** with **build-tools 34.0.0 or any newer 34.x** | Building the launcher. JDK 23 and newer stops Gradle 8.9. Platform 34 is the one the build reads; a newer platform does not replace it. On macOS, when none of these is installed: `brew install openjdk@17 android-commandlinetools`, then `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. On Linux the install script looks in `~/Android/Sdk` and for `java` on your PATH. |
+| **Python 3** | Для утилит; зависимости устанавливаются в виртуальное окружение командой ниже. Для проверок репозитория atvOS используйте Python 3.12, как указано в инструкции установки. |
+| **JDK от 17 до 22** — полный комплект, включая `jlink` — и **Android SDK platform 34** с **build-tools 34.0.0 или новее в ветке 34.x** | Для сборки лаунчера. JDK 23 и новее несовместимы с Gradle 8.9. Нужна именно platform 34: более новая платформа её не заменяет. На macOS можно установить `brew install openjdk@17 android-commandlinetools`, затем `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. На Linux скрипт ищет SDK в `~/Android/Sdk`, а `java` — в PATH. |
 
-`tools/tv.py` talks to network ADB on port 5555. If that port stays closed and the TV offers
-Wireless debugging with a pairing code (the Chromecast with Google TV and the Google TV Streamer
-do), pair it once with the stock `adb`. Then either run `adb tcpip 5555` to open the port, which
-usually lasts only until the TV reboots, or keep it closed: point `TV_ADB_BINARY` at that same
-`adb` and `TV_HOST` at the port the Wireless debugging screen shows, and the tools reach the TV
-through the paired connection with nothing listening on 5555
-([tools/native-adb.md](tools/native-adb.md)). [Troubleshooting](docs/TROUBLESHOOTING.md#connecting)
-has both, with the pairing steps.
+`tools/tv.py` подключается к сетевому ADB на порту 5555. Если порт закрыт, а телевизор предлагает Wireless debugging с кодом сопряжения, сначала выполните сопряжение стандартным `adb`. Такой способ используют Chromecast with Google TV и Google TV Streamer. Затем можно открыть порт командой `adb tcpip 5555` — обычно до перезагрузки — либо оставить его закрытым: задайте `TV_ADB_BINARY` с путём к тому же `adb`, а `TV_HOST` — с адресом и портом из экрана беспроводной отладки. Утилиты будут использовать сопряжённое соединение, не открывая 5555. Подробнее: [tools/native-adb.md](tools/native-adb.md) и [устранение проблем с подключением](docs/TROUBLESHOOTING.md#connecting).
 
 ```bash
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
@@ -211,40 +199,35 @@ tools/theme.sh themes/aurora                                 # push a theme; --r
 tools/venv/bin/python -I tools/wallpaper_prep.py ~/Pictures/trip mytheme/wallpapers   # your photos, sized and darkened for the TV
 ```
 
-| Tool | What it does |
+| Утилита | Что делает |
 |---|---|
-| [`tools/tv.py`](tools/tv.py) | Pure-Python ADB client: shell, batch, push, pull, reboot, and screenshots, optionally pressing remote keys first. Works where the stock `adb` binary is blocked. Optional [paired Google ADB backend](tools/native-adb.md) for encrypted Wireless debugging. |
-| [`tools/docker-build.sh`](tools/docker-build.sh) | Builds the launcher or an add-on in Docker (JDK 17, Android SDK 34), so this computer needs nothing but Docker. Install the result with `SKIP_BUILD=1`. [Guide](tools/docker-build.md). |
-| [`tools/b64push.py`](tools/b64push.py) | Uploads large files such as APKs in base64 chunks and verifies the checksum. |
-| [`tools/relay.py`](tools/relay.py) | Forwards a local port to the TV's ADB port, for assistants whose sandbox can't reach your network. Listens on this computer only. [Guide](tools/relay.md). |
-| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Apply or undo a debloat list, the undo from the state recorded before the change. |
-| [`tools/recovery.py`](tools/recovery.py) | Writes the record `disable.sh` needs to undo itself, and prints the restore batch. |
-| [`tools/check.py`](tools/check.py) | Compares the TV with the list that was applied, for what a firmware update undid; `--fix` puts it back. |
-| [`tools/match.py`](tools/match.py) | Reads a saved `pm list packages` and prints, for each package, how many lists in `examples/` disable it, how many keep it commented out, and their most common note; Android's core packages show as `never`. Offline, changes nothing (`tools/venv/bin/python -I tools/match.py packages.txt`). |
-| [`tools/adb-closed.py`](tools/adb-closed.py) | Checks that the TV's network ADB port is closed once debugging is off: exits 0 when the TV refuses the connection, 1 while it is still open, 2 when nothing answered or the check itself could not run. No `nc` needed. |
-| [`tools/philips-api.py`](tools/philips-api.py) | Philips only: checks that the JointSpace control API Home Assistant uses still answers, before and after a debloat (`tools/venv/bin/python -I tools/philips-api.py <tv ip>`). Port 1926 over HTTPS first, then 1925; reads only what answers without pairing. |
-| [`tools/privacy.py`](tools/privacy.py) | Audits the TV for voice, ACR and telemetry candidates and prints the evidence for each; `--write` turns the findings into a list `disable.sh` and `restore.sh` already understand. |
-| [`tools/theme.sh`](tools/theme.sh), [`theme_restart.py`](tools/theme_restart.py) | Push a folder from [`themes/`](themes/) to the launcher and restart Home. |
-| [`tools/wallpaper_prep.py`](tools/wallpaper_prep.py) | Turns a folder of your own photos (JPEG, PNG, WebP, HEIC) into darkened 1280×720 JPEGs under 300 KB for a theme's `wallpapers/` folder. Needs Pillow, plus pillow-heif for HEIC (`tools/requirements-photos.txt`). Never touches the originals. [How to use it](#your-own-photos-as-the-background). |
-| [`tools/manage.py`](tools/manage.py) | List every add-on, theme and switch with its screenshot, see what is on the TV, and install, update or remove one by running its creator's own script. |
-| [`tools/bench.py`](tools/bench.py) | Measures the launcher that answers HOME: key latency, how far the focus moved, janky frames, cold start, return to Home, and the idle CPU and PSS it costs. Changes nothing on the TV and writes the raw per-key numbers to JSON; no extra install. |
-| [`tools/trace.py`](tools/trace.py), [`trace_report.py`](tools/trace_report.py) | Records Perfetto traces of the launcher (return to Home, cold start, D-pad) and reports where its time goes, per run and before against after. Optional: needs [`requirements-perf.txt`](tools/requirements-perf.txt). [Guide](tools/trace.md). |
-| [`tools/flamechart.py`](tools/flamechart.py) | Draws a before/after flame chart from those traces, for a pull request: one lane per thread on a shared time scale, the work a change targets in magenta with its total. Optional, like the trace tools. [Guide](tools/flamechart.md). |
-| [`tools/screendiff.py`](tools/screendiff.py) | Compares a before and an after screenshot pixel by pixel, leaving out the clock or anything you mask, and writes the pair with your Wi-Fi name blurred. Optional, like the trace tools. [Guide](tools/screendiff.md). |
-| [`tools/race_calendar.py`](tools/race_calendar.py) | Writes this season's F1 calendar into a theme for race-weekend mode, from the free Jolpica API. |
-| [`launcher/build-and-install.sh`](launcher/build-and-install.sh) | Builds a shrunk release (about 572 KB), installs it, switches Home, and rolls back if Home does not land on it. |
+| [`tools/tv.py`](tools/tv.py) | ADB-клиент на Python: команды оболочки, пакетное выполнение, push, pull, перезагрузка и снимки экрана, в том числе после нажатий кнопок пульта. Работает там, где стандартный `adb` заблокирован. Поддерживает [сопряжённый Google ADB](tools/native-adb.md) для зашифрованной беспроводной отладки. |
+| [`tools/docker-build.sh`](tools/docker-build.sh) | Собирает лаунчер или дополнение в Docker с JDK 17 и Android SDK 34; на компьютере нужен только Docker. Результат устанавливается с `SKIP_BUILD=1`. [Руководство](tools/docker-build.md). |
+| [`tools/b64push.py`](tools/b64push.py) | Передаёт большие файлы, например APK, частями в base64 и проверяет контрольную сумму. |
+| [`tools/relay.py`](tools/relay.py) | Перенаправляет локальный порт на ADB-порт телевизора, если песочница помощника не имеет доступа к вашей сети. Принимает соединения только с этого компьютера. [Руководство](tools/relay.md). |
+| [`tools/disable.sh`](tools/disable.sh), [`restore.sh`](tools/restore.sh) | Применяют список отключений или отменяют его по состоянию, записанному перед изменениями. |
+| [`tools/recovery.py`](tools/recovery.py) | Создаёт запись, необходимую `disable.sh` для отмены изменений, и выводит пакет команд восстановления. |
+| [`tools/check.py`](tools/check.py) | Сравнивает состояние ТВ с применённым списком и показывает, что изменилось после обновления прошивки. `--fix` повторно применяет настройки. |
+| [`tools/match.py`](tools/match.py) | Читает сохранённый `pm list packages` и показывает, сколько списков в `examples/` отключают пакет, сколько оставляют его закомментированным и какое пояснение встречается чаще. Для основных пакетов Android выводит `never`. Работает без сети и ничего не меняет: `tools/venv/bin/python -I tools/match.py packages.txt`. |
+| [`tools/adb-closed.py`](tools/adb-closed.py) | Проверяет, закрыт ли сетевой ADB после выключения отладки. Код 0 — телевизор отказал в подключении; 1 — порт открыт; 2 — ответа нет или проверку выполнить не удалось. `nc` не требуется. |
+| [`tools/philips-api.py`](tools/philips-api.py) | Только Philips: до и после отключения пакетов проверяет доступность API JointSpace, используемого Home Assistant: `tools/venv/bin/python -I tools/philips-api.py <tv ip>`. Сначала HTTPS на порту 1926, затем порт 1925; читает только данные, доступные без сопряжения. |
+| [`tools/privacy.py`](tools/privacy.py) | Ищет службы голоса, ACR и телеметрии, показывая основания для каждого вывода. `--write` создаёт список, совместимый с `disable.sh` и `restore.sh`. |
+| [`tools/theme.sh`](tools/theme.sh), [`theme_restart.py`](tools/theme_restart.py) | Передают папку из [`themes/`](themes/) в лаунчер и перезапускают домашний экран. |
+| [`tools/wallpaper_prep.py`](tools/wallpaper_prep.py) | Подготавливает собственные фотографии JPEG, PNG, WebP и HEIC: затемнённые JPEG 1280×720 размером до 300 КБ для папки `wallpapers/` темы. Нужны Pillow и pillow-heif для HEIC (`tools/requirements-photos.txt`). Оригиналы не изменяются. [Как использовать](#your-own-photos-as-the-background). |
+| [`tools/manage.py`](tools/manage.py) | Показывает дополнения, темы и настройки со снимками, состояние телевизора; устанавливает, обновляет и удаляет дополнения с помощью скриптов их авторов. |
+| [`tools/bench.py`](tools/bench.py) | Измеряет лаунчер, отвечающий на HOME: задержки кнопок, перемещение фокуса, пропуски кадров, холодный запуск, возврат на главный экран, фоновую загрузку CPU и память PSS. Не меняет настройки ТВ, сохраняет измерения в JSON и не требует дополнительного приложения. |
+| [`tools/trace.py`](tools/trace.py), [`trace_report.py`](tools/trace_report.py) | Записывают трассировки Perfetto при запуске, возврате домой и навигации пультом; показывают, на что уходит время, и сравнивают результаты до и после. Дополнительно нужны зависимости из [`requirements-perf.txt`](tools/requirements-perf.txt). [Руководство](tools/trace.md). |
+| [`tools/flamechart.py`](tools/flamechart.py) | Строит диаграмму выполнения до и после изменения для pull request: отдельная дорожка на поток, общая шкала времени, интересующие операции выделены пурпурным с общей длительностью. Использует те же дополнительные зависимости. [Руководство](tools/flamechart.md). |
+| [`tools/screendiff.py`](tools/screendiff.py) | Попиксельно сравнивает снимки до и после, исключая часы и заданные маски; сохраняет пару изображений с размытым названием Wi-Fi. Использует дополнительные зависимости для анализа. [Руководство](tools/screendiff.md). |
+| [`tools/race_calendar.py`](tools/race_calendar.py) | Получает календарь текущего сезона F1 из бесплатного Jolpica API и записывает его в тему для режима гоночных выходных. |
+| [`launcher/build-and-install.sh`](launcher/build-and-install.sh) | Собирает оптимизированный APK, устанавливает его, переключает домашний экран и возвращает штатный лаунчер, если новый не запускается как Home. Размер исходного CleanYourTV — около 572 КБ; опубликованная сборка atvOS — около 596 КБ. |
 
-The scripts never leave the TV without a Home app: they only disable a stock launcher they recognise,
-and skip the Home app in a list until another launcher answers HOME. Your own lists can live outside
-the repository: list paths are relative to the directory you run from, and absolute paths work too.
+Скрипты защищают домашний экран: отключают только известный штатный лаунчер и пропускают его в списке отключений, пока на HOME не отвечает другой лаунчер. Собственные списки могут находиться вне репозитория: пути считаются от текущего каталога, абсолютные пути тоже поддерживаются.
 
 <details>
-<summary><b>Windows (PowerShell)</b></summary>
+<summary><b>Windows — PowerShell</b></summary>
 
-Every script has a PowerShell twin next to it. Install Python 3 and a JDK from 17 through 22, and
-in the SDK Manager add platform 34 and build-tools 34 (34.0.0 or any newer 34.x). The script uses
-`JAVA_HOME` when it points at a JDK in that range, and otherwise Android Studio's bundled JDK when
-that JDK is in the same range:
+У каждого скрипта есть версия для PowerShell. Установите Python 3, JDK от 17 до 22, platform 34 и build-tools 34 — версию 34.0.0 или более новую 34.x — через SDK Manager. Скрипт использует `JAVA_HOME`, если там подходящий JDK, либо встроенный JDK Android Studio, если его версия тоже подходит:
 
 ```powershell
 python -m venv tools\venv; tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt
@@ -254,355 +237,302 @@ powershell -ExecutionPolicy Bypass -File tools\restore.ps1 -TvHost 192.168.1.50 
 powershell -ExecutionPolicy Bypass -File tools\theme.ps1 -TvHost 192.168.1.50 themes\aurora
 ```
 
-The last two are the undo and a theme push, the `tools/restore.sh` and `tools/theme.sh` lines the
-sections above give in bash. On Google TV the undo takes the stock launcher as well:
-`-Stock com.google.android.apps.tv.launcherx`.
+Последние две команды соответствуют восстановлению через `tools/restore.sh` и применению темы через `tools/theme.sh` из примеров bash выше. Для возврата штатного Google TV дополнительно передайте `-Stock com.google.android.apps.tv.launcherx`.
 
 </details>
 
 <details>
-<summary><b>How the scripts protect Home</b></summary>
+<summary><b>Как скрипты защищают домашний экран</b></summary>
 
-The install scripts ask the TV which launcher owns Home and only disable one they recognise, the four
-in `KNOWN_STOCK_LAUNCHERS`: `com.google.android.tvlauncher`, `com.google.android.apps.tv.launcherx`,
-`com.google.android.leanbacklauncher` and Xiaomi's `com.mitv.tvhome` (PatchWall). Pass
-`STOCK_LAUNCHER=<package>` (`-StockLauncher`) to override, or `none` to leave it alone.
+Скрипты установки спрашивают телевизор, какое приложение отвечает за Home, и отключают его только в том случае, если оно входит в `KNOWN_STOCK_LAUNCHERS`: `com.google.android.tvlauncher`, `com.google.android.apps.tv.launcherx`, `com.google.android.leanbacklauncher` или Xiaomi `com.mitv.tvhome` — PatchWall. Другое приложение можно указать через `STOCK_LAUNCHER=<package>` (`-StockLauncher`); значение `none` оставляет штатный лаунчер включённым.
 
-`tools/disable.sh` (`disable.ps1`) applies the same rule before it disables anything:
+`tools/disable.sh` и `disable.ps1` применяют ту же защиту до отключения пакетов:
 
-- If the list contains the app that owns Home and no other app on the TV answers HOME, it skips that
-  entry, says why, and disables the rest of the list. So a list applied before the launcher handover
-  cannot leave the TV with nothing to start.
-- The setup wizard, the settings apps, a vendor `FallbackHome` and factory-test apps (Xiaomi's
-  `com.duokan.factorytest`) answer HOME too and don't count.
-- On Google TV it also keeps the owner while setupwraith answers HOME and stays enabled (not listed, or
-  kept for the Wi-Fi network): setupwraith answers ahead of an installed launcher that is not Home yet,
-  so it would take Home.
+- Если список содержит текущее приложение Home, а другого обработчика HOME нет, этот пункт пропускается с пояснением. Остальные пункты применяются. Телевизор не остаётся без домашнего экрана.
+- Мастер первоначальной настройки, приложения настроек, `FallbackHome` производителя и заводские тестовые приложения — например Xiaomi `com.duokan.factorytest` — не считаются полноценной заменой, хотя тоже могут отвечать на HOME.
+- На Google TV текущий лаунчер сохраняется и в том случае, если setupwraith остаётся включённым и отвечает на HOME: например, когда его нет в списке или он нужен для сохранённой сети Wi-Fi. Иначе мастер перехватит HOME раньше установленного, но ещё не выбранного лаунчера.
 
-Run the same list again once `launcher/build-and-install.sh` has made the new launcher Home and the
-entry is applied; `FORCE_HOME=1` (`$env:FORCE_HOME`) disables it anyway.
+Повторно примените список после того, как `launcher/build-and-install.sh` назначит новый Home. `FORCE_HOME=1` (`$env:FORCE_HOME`) принудительно отключает пакет независимо от этой проверки.
 
 </details>
 
-## The microphone, and what can be said about it
+<a id="the-microphone-and-what-can-be-said-about-it"></a>
 
-"Which of these packages is listening?" has no honest one-line answer: a permission scan shows fifty
-system packages with `RECORD_AUDIO` that record nothing, and ACR clients see the screen with no audio
-permission at all. [`tools/privacy.py`](tools/privacy.py) reports what the TV actually says, with the
-evidence for each voice, ACR and telemetry candidate:
-`TV_HOST=192.168.1.50 tools/venv/bin/python -I tools/privacy.py`, and `--write` turns them into a normal
-debloat list. What the audit cannot do is prove intent: [docs/privacy.md](docs/privacy.md) explains why.
+## Микрофон: что можно установить проверкой
 
-## The launcher
+На вопрос «Какой пакет слушает микрофон?» нельзя надёжно ответить только по разрешениям. Десятки системных пакетов могут иметь `RECORD_AUDIO` и ничего не записывать, а ACR-клиенты распознают содержимое экрана без доступа к микрофону.
 
-A small native home screen for Android TV: **about 572 KB**, plain Java, built for TVs with 1 GB of RAM.
-No blur, no video, no network permission, no background services. The **TV** needs Android 8.0 (API 26)
-or newer, the `minSdk` in [`launcher/app/build.gradle`](launcher/app/build.gradle); what is left on an older
-set is in [Troubleshooting](docs/TROUBLESHOOTING.md).
+[`tools/privacy.py`](tools/privacy.py) показывает фактические данные телевизора и основания для выводов о голосовых службах, ACR и телеметрии: `TV_HOST=192.168.1.50 tools/venv/bin/python -I tools/privacy.py`. Ключ `--write` превращает результаты в обычный список отключений. Проверка не доказывает намерения разработчика; подробнее — [docs/privacy.md](docs/privacy.md).
 
-| What | How it works |
+<a id="the-launcher"></a>
+
+## Лаунчер
+
+Исходный CleanYourTV — небольшой нативный домашний экран на Java, около **572 КБ**, рассчитанный на телевизоры с 1 ГБ ОЗУ, без сетевых разрешений, видео и фоновых служб. **atvOS отличается:** около **596 КБ**, с доступом к интернету для обложек и `READ_TV_LISTINGS` для рекомендаций. Эти отличия описаны в начале страницы.
+
+Телевизору нужен Android 8.0 — API 26 — или новее: это `minSdk` в [`launcher/app/build.gradle`](launcher/app/build.gradle). Возможности более старых устройств описаны в [устранении неполадок](docs/TROUBLESHOOTING.md).
+
+| Возможность | Как работает |
 |---|---|
-| **Configure** | Dock order, hidden apps, Live TV app, 4 to 7 tiles per row, reduced motion. All in [`config.xml`](launcher/app/src/main/res/values/config.xml) |
-| **Settings on the TV** | Hold OK on Settings for launcher settings. Optional `launcher_settings_button` makes a normal click open them directly; TV settings remain on the settings page and their app tile. |
-| **Themes** | Background, wallpaper and layout from a `config.json` pushed over Wi-Fi, no rebuild. Thirty ship in [`themes/`](themes/), the built-in `default/` included |
-| **31 languages** | Follows the TV's language, with a fully mirrored right-to-left layout for Hebrew |
-| **App library** | Optional: browse every installed app and add or remove Home shortcuts. See [the app library guide](docs/app-library.md) |
-| **Tile menu** | On by default (`tile_menu`): hold OK on a tile for Move and App info, plus Remove from Home when the app library is on. Off, holding OK opens App info |
-| **Module cards** | Any TV app can offer its own tile; you approve each one once. See [`docs/modules.md`](docs/modules.md) |
-| **Add-ons** | Optional apps that plug in as module cards, kept in [`addons/`](addons/) and never built into the launcher |
-| **Clock screensaver** | A drifting clock over the glow, so nothing burns in |
-| **Remote keys** | Keeps the Input, YouTube and gear buttons working after the stock launcher is gone |
+| **Настройка** | Порядок приложений в доке, скрытые приложения, приложение эфирного ТВ, от 4 до 7 плиток в строке и уменьшение анимаций задаются в [`config.xml`](launcher/app/src/main/res/values/config.xml). |
+| **Настройки на ТВ** | Удерживайте OK на кнопке настроек. `launcher_settings_button` позволяет открывать настройки лаунчера обычным нажатием; системные настройки остаются доступны со страницы настроек и через плитку приложения. |
+| **Темы** | Фон, обои и расположение элементов задаются в `config.json`, передаваемом по Wi-Fi без пересборки. В [`themes/`](themes/) есть тридцать тем, включая встроенную `default/`. |
+| **31 язык** | Интерфейс следует языку телевизора; для иврита предусмотрена зеркальная раскладка справа налево. |
+| **Библиотека приложений** | Позволяет просматривать установленные приложения, добавлять и убирать ярлыки домашнего экрана. [Руководство](docs/app-library.md). |
+| **Меню плитки** | Включено по умолчанию через `tile_menu`. Удержание OK открывает «Переместить», сведения о приложении и, при включённой библиотеке, удаление ярлыка с домашнего экрана. Если меню выключено, удержание открывает сведения о приложении. |
+| **Карточки модулей** | Приложение может предложить свою плитку; вы отдельно разрешаете её добавление. См. [`docs/modules.md`](docs/modules.md). |
+| **Дополнения** | Отдельные приложения с карточками модулей находятся в [`addons/`](addons/) и не встроены в лаунчер. |
+| **Заставка с часами** | Часы медленно перемещаются по экрану на фоне подсветки, чтобы избежать выгорания. |
+| **Кнопки пульта** | Помощники сохраняют работу кнопок источников, YouTube и настроек после отключения штатного лаунчера; результат зависит от прошивки и требует проверки настоящим пультом. |
 
-Themes, switches and add-ons together, with screenshots: [cleanyour.tv/addons](https://cleanyour.tv/addons).
+Темы, настройки и дополнения со снимками: [cleanyour.tv/addons](https://cleanyour.tv/addons).
 
-**More:** [docs/launcher.md](docs/launcher.md) has the launcher settings page row by row, changing the
-default home, the languages, remote keys, the Clock screensaver, navigation and building it yourself.
+**Подробнее:** [docs/launcher.md](docs/launcher.md) описывает все пункты настроек лаунчера, выбор Home по умолчанию, языки, кнопки пульта, часы, навигацию и самостоятельную сборку.
 
 <a id="your-own-photos-as-the-background"></a>
+
 <details>
-<summary><b>Your own photos as the background</b></summary>
+<summary><b>Собственные фотографии на фоне</b></summary>
 
-A theme can rotate a folder of pictures behind Home, with no rebuild. No pictures ship with the repo: you bring
-your own, and you decide you have the right to show them.
+Тема может менять фотографии из папки на домашнем экране без пересборки. Личные фотографии не входят в репозиторий; добавляйте только те, которые вправе использовать.
 
-1. **Start a theme folder.** Copy a theme you like from the [themes folder](themes/), for example
-   `themes/aurora`, into a new folder such as `mytheme/`, or start with an empty `config.json`.
-2. **Prepare the photos.** A bright 12 MP photo is heavy for a 1 to 2 GB TV and drowns the clock and tiles.
-   `tools/wallpaper_prep.py` centre-crops to 16:9, saves 1280×720 JPEGs under 300 KB, and darkens the picture
-   itself, so `wallpaper_dim` can stay at 0. HEIC phone photos work. Your originals are never touched.
-   Pillow goes into the `tools/venv` the quick start creates, not into a system Python, which has neither
-   the package nor (on Ubuntu) a pip that may install it.
+1. **Создайте папку темы.** Скопируйте понравившуюся тему из [каталога тем](themes/), например `themes/aurora`, в `mytheme/` или создайте пустой `config.json`.
+2. **Подготовьте фотографии.** Яркий снимок на 12 Мп тяжёл для телевизора с 1–2 ГБ ОЗУ и мешает читать часы и плитки. `tools/wallpaper_prep.py` обрезает изображение по центру до 16:9, сохраняет JPEG 1280×720 размером до 300 КБ и затемняет сам файл. Поэтому `wallpaper_dim` можно оставить равным 0. Поддерживается HEIC; оригиналы не изменяются. Pillow устанавливается в `tools/venv`, созданное при настройке, а не в системный Python, где зависимости могут отсутствовать, а установка пакетов — быть ограничена.
 
    ```bash
    tools/venv/bin/pip install -r tools/requirements-photos.txt
    tools/venv/bin/python -I tools/wallpaper_prep.py ~/Pictures/trip mytheme/wallpapers
    ```
 
-   Options: `--brightness 0.25` (0.1 to 1.0), `--gradient 0.6` (extra black toward the dock), `--size 1280x720`,
-   `--max-kb 300`.
-3. **Set the rotation** in `mytheme/config.json`:
+   Параметры: `--brightness 0.25` — яркость от 0.1 до 1.0; `--gradient 0.6` — дополнительное затемнение ближе к доку; `--size 1280x720`; `--max-kb 300`.
+3. **Настройте смену фотографий** в `mytheme/config.json`:
 
    ```json
    { "wallpaper": true, "wallpaper_rotation_minutes": 1, "wallpaper_order": "shuffle", "wallpaper_dim": 0 }
    ```
 
-   | Key | Notes |
+   | Ключ | Что означает |
    |---|---|
-   | `wallpaper_rotation_minutes` | Whole minutes, 0 to 1440. **1 is the fastest.** `0` means no rotation, and a fraction such as `0.25` is read as `0`, which stops it. |
-   | `wallpaper_order` | `shuffle` never shows the same picture twice in a row; `sequential` follows the file names. |
-   | `wallpaper_dim` | Black overlay in percent. Leave at 0 when the pictures are already darkened. |
-   | `dock_glass`, `dock_opacity` | A frosted-glass dock band (30 to 100%) so the picture shows behind the tiles. |
-   | `greeting_name` | A name after the greeting: "Good evening, Sam". |
-   | `show_stats`, `app_library`, `reduced_motion` | A stats line under the clock, an App library pill, calmer motion for weak GPUs. |
+   | `wallpaper_rotation_minutes` | Целое число от 0 до 1440. **Минимальный интервал — 1 минута.** `0` отключает смену; дробное значение вроде `0.25` читается как `0` и тоже отключает её. |
+   | `wallpaper_order` | `shuffle` не показывает одну фотографию два раза подряд; `sequential` идёт по именам файлов. |
+   | `wallpaper_dim` | Затемнение чёрным в процентах. Оставьте 0, если фотографии уже затемнены. |
+   | `dock_glass`, `dock_opacity` | Полупрозрачная полоса дока с непрозрачностью от 30 до 100%, через которую видна фотография. |
+   | `greeting_name` | Имя в приветствии, например «Добрый вечер, Саша». |
+   | `show_stats`, `app_library`, `reduced_motion` | Строка статистики под часами, кнопка библиотеки приложений и менее активные анимации для слабого GPU. |
 
-4. **Push it to the TV** (this restarts Home once, and keeps the Home-key helper working):
+4. **Передайте тему на телевизор.** Домашний экран перезапустится один раз; помощник кнопки Home сохранит работу:
 
    ```bash
    tools/theme.sh mytheme            # Windows: tools\theme.ps1 -TvHost 192.168.1.50 mytheme
    ```
 
-   On the TV, **Launcher settings → Wallpaper** holds one picture, **None**, or **Theme default**, which
-   rotates again.
-5. **Take it off** with `tools/theme.sh --reset`.
+   В меню **Настройки лаунчера → Обои** можно закрепить одну фотографию, выбрать **Нет** или **По умолчанию для темы**, чтобы вернуть смену изображений.
+5. **Удалите тему**, если нужно: `tools/theme.sh --reset`.
 
-What it cannot do: there is no crossfade (the picture changes with a cut), no rotation faster than a minute, and
-the Clock screensaver shows time and date only, never photos. Without a `wallpapers/` folder the theme still
-works and Home keeps its plain colour. A picture is decoded into memory while Home shows it: about 4 MB at 1080p
-in the default 16-bit colour, 8 MB with `wallpaper_true_color` (see [themes/README.md](themes/README.md)), so keep
-the pictures small on a 1 GB TV.
+Ограничения: плавного перехода между фотографиями нет; смена возможна не чаще раза в минуту; заставка с часами показывает время и дату, но не фотографии. Без папки `wallpapers/` тема продолжает работать с однотонным фоном. Изображение в памяти занимает около 4 МБ при 1080p и стандартном 16-битном цвете, либо 8 МБ с `wallpaper_true_color`: см. [themes/README.md](themes/README.md). На телевизоре с 1 ГБ ОЗУ используйте небольшие фотографии.
 
 </details>
 
-## Restoring your TV
+<a id="restoring-your-tv"></a>
 
-Keep the list you applied. One line puts the TV back the way it was:
+## Восстановление телевизора
+
+Сохраните применённый список. Вернуть прежнее состояние можно одной командой:
 
 ```bash
 TV_HOST=192.168.1.50 tools/restore.sh examples/<your tv>/debloat.txt                                    # Android TV
 TV_HOST=192.168.1.50 tools/restore.sh examples/<your tv>/debloat.txt com.google.android.apps.tv.launcherx  # Google TV
 ```
 
-| What | How |
+| Что происходит | Как работает |
 |---|---|
-| **A record comes first** | Before `tools/disable.sh` changes anything it writes down what the TV looked like, in `~/.cleanyourtv/`. |
-| **Restore replays it** | A package you had disabled yourself stays disabled, and Home goes back to the component that owned it. |
-| **The launcher stays installed** | Remove it from the TV's Settings → Apps if you want it gone. |
-| **No computer?** | If the TV is unreachable, its own Settings → Apps page can re-enable packages too. |
+| **Сначала записывается состояние** | Перед изменениями `tools/disable.sh` сохраняет исходное состояние телевизора в `~/.cleanyourtv/`. |
+| **Восстановление использует запись** | Пакеты, отключённые вами заранее, остаются отключёнными; Home возвращается прежнему компоненту. |
+| **Лаунчер остаётся установленным** | При необходимости удалите его через Настройки → Приложения на телевизоре. |
+| **Нет компьютера?** | Пакеты можно снова включить через настройки приложений самого телевизора. |
 
-**More:** [docs/restore.md](docs/restore.md) has what the record holds, when the stock launcher argument
-counts, and what happens without a record.
+**Подробнее:** [docs/restore.md](docs/restore.md) — что хранится в записи, когда нужен аргумент штатного лаунчера и что происходит, если запись отсутствует.
 
-## After a firmware update
+<a id="after-a-firmware-update"></a>
 
-An update installs over the cleaned-up system: the listed packages come back, Home goes to the
-stock launcher, and new preloads appear that no list mentions. Open ADB again as in
-[Quick start](#quick-start) step 1, then compare the TV with the list you applied; `--fix` puts it back:
+## После обновления прошивки
+
+Обновление может вернуть отключённые пакеты, штатный домашний экран и добавить новые приложения, которых ещё нет в списке. Снова включите ADB, как в первом шаге [быстрого старта](#quick-start), и сравните состояние ТВ с применённым списком. Параметр `--fix` повторно применяет нужные изменения:
 
 ```bash
 TV_HOST=192.168.1.50 tools/venv/bin/python -I tools/check.py examples/<your tv>/debloat.txt
 ```
 
-**More:** [docs/firmware-updates.md](docs/firmware-updates.md) has the exit codes, a weekly check, what
-`--fix` changes, TVs that keep the stock launcher as Home, and lists that disable the updater.
+**Подробнее:** [docs/firmware-updates.md](docs/firmware-updates.md) — коды завершения, еженедельная проверка, действия `--fix`, устройства, где сохраняется штатный Home, и списки с отключённым обновлением прошивки.
 
-## When something goes wrong
+<a id="when-something-goes-wrong"></a>
 
-The full list of things that bit us is in [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md). The
-three that matter most:
+## Если что-то пошло не так
 
-- 🍎 **macOS reports "No route to host" although the port is open**: Local Network privacy keeps the terminal app off the local subnet, and the permission belongs to that app rather than to the client, so the stock `adb` and `tools/tv.py` fail the same way (seen on macOS 26). Allow Terminal, iTerm2 or VS Code under System Settings → Privacy & Security → Local Network, then quit and reopen it ([Troubleshooting](docs/TROUBLESHOOTING.md#connecting)).
-- ⚠️ **Disable the stock launcher only after the new one is installed and running**, or Home lands on a factory test app. The install script orders this for you.
-- 🔁 **On Google TV the setup wizard** (`com.google.android.tungsten.setupwraith`) can take Home and crash-loop the system after the stock launcher is disabled. Disable it too, and list it in your `debloat.txt` so restore brings it back.
-  - But check `dumpsys wifi | grep -o 'cname=[^ ]*'` first: if the Wi-Fi network was saved during setup it belongs to setupwraith, and disabling it deletes the network (re-join it in Settings first; `tools/disable.sh` skips setupwraith until you do).
-  - On Google's own Chromecast and on the Google TV Streamer it also costs phone casting, see [Troubleshooting](docs/TROUBLESHOOTING.md).
-  - Stuck already? `tools/tv.py 'pm enable --user 0 com.google.android.apps.tv.launcherx'`. On some sets (seen on a TCL Smart TV Pro, Android 14) this is one-way: getting back to this launcher then needs ADB, or keep launcherx and use `stock_home_redirect`, see [Troubleshooting](docs/TROUBLESHOOTING.md#working-on-the-tv).
+Полный список известных проблем — [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md). Три наиболее важных случая:
 
-## Questions people ask
+- 🍎 **macOS сообщает «No route to host», хотя порт открыт.** Разрешение «Локальная сеть» может блокировать приложение терминала, а не сам ADB-клиент; поэтому одинаково не работают `adb` и `tools/tv.py`. Это наблюдалось на macOS 26. Разрешите доступ Terminal, iTerm2 или VS Code в Системные настройки → Конфиденциальность и безопасность → Локальная сеть, затем полностью закройте и откройте приложение: [подробнее](docs/TROUBLESHOOTING.md#connecting).
+- ⚠️ **Отключайте штатный лаунчер только после установки и проверки нового.** Иначе HOME может открыть заводское тестовое приложение. Скрипт установки соблюдает нужный порядок.
+- 🔁 **Мастер настройки Google TV** — `com.google.android.tungsten.setupwraith` — после отключения штатного лаунчера может перехватить HOME и вызвать цикл сбоев. Если его отключаете, добавьте в `debloat.txt`, чтобы восстановление могло включить его обратно.
+  - Сначала проверьте `dumpsys wifi | grep -o 'cname=[^ ]*'`. Если сеть Wi-Fi была сохранена мастером настройки, она принадлежит setupwraith; его отключение удалит сеть. Сначала повторно подключите её через настройки. `tools/disable.sh` пропускает setupwraith, пока это не сделано.
+  - На Chromecast и Google TV Streamer отключение также лишает трансляции с телефона: см. [устранение неполадок](docs/TROUBLESHOOTING.md).
+  - Если проблема уже возникла: `tools/tv.py 'pm enable --user 0 com.google.android.apps.tv.launcherx'`. На некоторых моделях, включая TCL Smart TV Pro с Android 14, после этого вернуться к стороннему лаунчеру можно только через ADB. Альтернатива — оставить launcherx включённым и использовать `stock_home_redirect`: [подробнее](docs/TROUBLESHOOTING.md#working-on-the-tv).
+
+<a id="questions-people-ask"></a>
+
+## Вопросы и ответы
 
 <details>
-<summary><b>I don't code and don't have a laptop. Can I still do this?</b></summary>
+<summary><b>Я не программирую и у меня нет ноутбука. Получится?</b></summary>
 
-Yes. Independent developers have built free, open-source apps on CleanYourTV's TV lists that do the cleanup
-over Wi-Fi, with no coding agent. Each shows a plan first, only switches apps off, and can put everything back:
+Для отключения лишних приложений — да. Независимые разработчики создали бесплатные приложения с открытым кодом на основе списков CleanYourTV. Они работают по Wi-Fi без помощника по программированию, сначала показывают план, только отключают пакеты и позволяют отменить изменения:
 
-| App | For | By |
+| Приложение | Платформа | Автор |
 |---|---|---|
-| [Clean Your TV app](https://github.com/udhaykumarbala/cleanyourtv-app) | Android phone | [@udhaykumarbala](https://github.com/udhaykumarbala) |
-| [Tellyscope](https://github.com/man15h/tellyscope) | Android phone | [@man15h](https://github.com/man15h) |
-| [TidyTV](https://github.com/jolan94/tidytv) | Android phone, Google Play | [@jolan94](https://github.com/jolan94) |
-| [CleanMyTV](https://github.com/wingedpanther/cleanmytv) | Mac and Windows | [@wingedpanther](https://github.com/wingedpanther) |
+| [Clean Your TV app](https://github.com/udhaykumarbala/cleanyourtv-app) | Телефон Android | [@udhaykumarbala](https://github.com/udhaykumarbala) |
+| [Tellyscope](https://github.com/man15h/tellyscope) | Телефон Android | [@man15h](https://github.com/man15h) |
+| [TidyTV](https://github.com/jolan94/tidytv) | Телефон Android, Google Play | [@jolan94](https://github.com/jolan94) |
+| [CleanMyTV](https://github.com/wingedpanther/cleanmytv) | Mac и Windows | [@wingedpanther](https://github.com/wingedpanther) |
 
-These apps are independent projects, not affiliated with or endorsed by CleanYourTV or its maintainer, and each
-is provided as is under its own license. Report app problems in that app's repo. More at
-[cleanyour.tv/app](https://cleanyour.tv/app).
+Это самостоятельные проекты, не связанные с CleanYourTV и не одобренные его сопровождающим. Каждый распространяется как есть по собственной лицензии. Ошибки приложения сообщайте в его репозитории. Подробнее: [cleanyour.tv/app](https://cleanyour.tv/app). Установка именно atvOS описана в [отдельном руководстве](docs/atvos-install.ru.md).
 
 </details>
 
 <details>
-<summary><b>Is this safe? Can it brick the TV?</b></summary>
+<summary><b>Это безопасно? Можно вывести телевизор из строя?</b></summary>
 
-Nothing is flashed, rooted or deleted; packages are disabled
-in the user profile. The risk is disabling something the TV leans on, which is why lists are
-applied in small batches with a restore script ready. The TV's own Settings → Apps page can
-re-enable packages even without the tools. If the TV no longer starts far enough for that, a factory
-reset from its recovery menu is usually the way back.
+Прошивка не меняется, root не используется, приложения не удаляются — пакеты отключаются в профиле пользователя. Риск состоит в отключении компонента, от которого зависит телевизор, поэтому изменения применяются небольшими группами с готовым восстановлением. Пакеты можно включить в Настройки → Приложения даже без компьютера. Если телевизор не запускается до этого экрана, обычно помогает заводской сброс через меню восстановления.
 
-More: [docs/faq.md](docs/faq.md#is-this-safe-can-it-brick-the-tv)
+Подробнее: [docs/faq.md](docs/faq.md#is-this-safe-can-it-brick-the-tv).
 
 </details>
 
 <details>
-<summary><b>What about firmware updates?</b></summary>
+<summary><b>Что будет с обновлениями прошивки?</b></summary>
 
-The updater is left on in most lists, so firmware updates arrive as usual. Some lists disable the
-TV's own updater, and on those a firmware update arrives only when you re-enable it. When one does
-land it installs over the cleaned-up system, so a package comes back and you re-run the script: see
-[After a firmware update](#after-a-firmware-update).
+В большинстве списков служба обновления остаётся включённой, и прошивки приходят как обычно. Некоторые списки отключают её — в таком случае обновления вернутся после включения службы. Обновление может восстановить отключённые пакеты; тогда нужно повторно применить список: [После обновления прошивки](#after-a-firmware-update).
 
 </details>
 
 <details>
-<summary><b>Won't the apps break?</b></summary>
+<summary><b>Приложения не перестанут работать?</b></summary>
 
-Streaming apps still update through the Play Store, which is left alone.
-The launcher just lists what is installed and launches it with intents that have been stable for a decade.
-
-</details>
-
-<details>
-<summary><b>How do I rearrange my apps?</b></summary>
-
-Hold OK on **Settings** (top right) and choose **Reorder apps**. OK picks an app up, the arrows move it,
-Back places it, and Back again finishes. Holding OK on a tile also offers **Move** (`tile_menu`, on by default), which
-picks that app up straight away. More: [docs/launcher.md](docs/launcher.md#launcher-settings-and-the-default-home)
+Play Store остаётся включённым, поэтому приложения продолжают обновляться. Лаунчер показывает установленные приложения и запускает их через стандартные механизмы Android, которые используются уже много лет.
 
 </details>
 
 <details>
-<summary><b>Can I do this for someone in another home?</b></summary>
+<summary><b>Как изменить порядок приложений?</b></summary>
 
-Yes, over a private [Tailscale](https://tailscale.com)
-link instead of the same Wi-Fi: either Tailscale on their TV, shared with you, or a computer or Apple
-TV at their home routing to it. Never by opening the ADB port on their router. Step by step in
-[docs/REMOTE.md](docs/REMOTE.md).
+Удерживайте OK на **Настройках** вверху справа и выберите **Изменить порядок приложений**. OK подхватывает плитку, стрелки перемещают её, «Назад» ставит на место, повторное «Назад» завершает редактирование. Если включён `tile_menu` — по умолчанию так и есть — можно удержать OK на плитке и выбрать **Переместить**. Подробнее: [docs/launcher.md](docs/launcher.md#launcher-settings-and-the-default-home).
 
 </details>
 
 <details>
-<summary><b>Isn't ADB access a security hole?</b></summary>
+<summary><b>Можно настроить телевизор в другом доме?</b></summary>
 
-It is one explicit "allow this computer" tap on the TV, the
-same as developing an Android app. Network ADB is plaintext on port 5555, and on some firmware any
-device on the LAN gets a shell, so close it when you are done:
-
-1. On the TV: Developer options → turn **USB debugging**, **Network/ADB debugging** and
-   **Wireless debugging** off, whichever the TV has, and revoke the USB debugging authorisations.
-2. Reboot the TV, then confirm the port is gone from your computer:
-   `python3 tools/adb-closed.py <tv ip>` must say the port is closed.
-
-The launcher keeps working without debugging. More, including checking Wireless debugging's own port:
-[docs/faq.md](docs/faq.md#isnt-adb-access-a-security-hole)
+Да, через закрытое соединение [Tailscale](https://tailscale.com): установите Tailscale на удалённый телевизор и откройте к нему доступ либо используйте компьютер или Apple TV в той сети как маршрутизатор. Не открывайте ADB-порт на интернет-маршрутизаторе. Пошаговое руководство: [docs/REMOTE.md](docs/REMOTE.md).
 
 </details>
 
 <details>
-<summary><b>Can it block ads inside apps too?</b></summary>
+<summary><b>ADB не создаёт дыру в безопасности?</b></summary>
 
-Partly, with Android's Private DNS (Android 9 and newer). Point
-it at an ad-blocking resolver such as [AdGuard DNS](https://adguard-dns.io) and every app's ad and
-tracker domains stop resolving, system-wide, surviving reboots. The trade-off: that resolver then
-sees every DNS query the TV makes, and it does not remove YouTube ads.
+Доступ разрешается явным подтверждением на телевизоре, как при разработке Android-приложения. Но сетевой ADB на порту 5555 не шифруется, а на некоторых прошивках командная оболочка доступна любому устройству в локальной сети. После настройки закройте доступ:
 
-More, with the two commands and how to switch back: [docs/faq.md](docs/faq.md#can-it-block-ads-inside-apps-too)
+1. В настройках разработчика выключите **USB-отладку**, **сетевую/ADB-отладку** и **Wireless debugging**, если такие пункты есть, и отзовите разрешения USB-отладки.
+2. Перезагрузите ТВ и проверьте с компьютера: `python3 tools/adb-closed.py <tv ip>` должен сообщить, что порт закрыт.
 
-</details>
-
-<details>
-<summary><b>Are there switches in the TV's own Settings worth flipping too?</b></summary>
-
-A few, and they need no ADB: the advertising ID, Location, Usage & diagnostics and Scanning always
-available, plus Apps only mode where the stock launcher stays. Flip Usage & diagnostics before the
-debloat; on some TVs its page goes with it.
-
-More, with the paths for Google TV, Android TV and Fire OS:
-[docs/faq.md](docs/faq.md#are-there-switches-in-the-tvs-own-settings-worth-flipping-too)
+Лаунчер продолжает работать без отладки. Подробнее, включая отдельный порт Wireless debugging: [docs/faq.md](docs/faq.md#isnt-adb-access-a-security-hole).
 
 </details>
 
 <details>
-<summary><b>AirPlay?</b></summary>
+<summary><b>Можно блокировать рекламу внутри приложений?</b></summary>
 
-Not from this repo. Chromecast built-in stays for Android phones. For iPhones,
-[jqssun/android-airplay-server](https://github.com/jqssun/android-airplay-server) works; an install
-script for it is in [PR #84](https://github.com/Gathin23/cleanyourtv/pull/84).
+Частично — через Private DNS в Android 9 и новее. Укажите блокирующий рекламу DNS, например [AdGuard DNS](https://adguard-dns.io), и запросы к известным рекламным и следящим доменам будут блокироваться для всех приложений, в том числе после перезагрузки. Этот DNS-сервис при этом видит запросы телевизора. Рекламу YouTube такой способ не убирает.
+
+Команды и возврат прежних настроек: [docs/faq.md](docs/faq.md#can-it-block-ads-inside-apps-too).
 
 </details>
 
 <details>
-<summary><b>Can I just download the APK?</b></summary>
+<summary><b>Какие настройки приватности можно изменить самим пультом?</b></summary>
 
-Build it with the one-line script in [Doing it by hand](#doing-it-by-hand); it takes a minute and you
-control what goes on your TV. That needs the JDK and Android SDK named there. No prebuilt binaries.
+Без ADB можно сбросить рекламный идентификатор, выключить геолокацию, отправку статистики и диагностики, постоянное сканирование сетей; если штатный лаунчер остаётся, включить режим «Только приложения», где он доступен. Отправку статистики и диагностики лучше отключить до очистки: на некоторых ТВ соответствующий экран исчезает вместе с отключёнными пакетами.
+
+Пути для Google TV, Android TV и Fire OS: [docs/faq.md](docs/faq.md#are-there-switches-in-the-tvs-own-settings-worth-flipping-too).
 
 </details>
 
-## The story
+<details>
+<summary><b>А AirPlay?</b></summary>
 
-On 17 October 2026 I posted [a before and after](https://x.com/gathint/status/2111379569030939102) of my
-parents' TV, cleaned up by Claude Code over Wi-Fi. It reached 8.6M views, people started doing the same to
-their own TVs, and their replies turned into the lists here: 170+ TV models from 200+ contributors in the
-first four days. The repo was called tv-vibehack until the 19th; old links work.
+В этом репозитории реализации AirPlay нет. Для телефонов Android сохраняется встроенный Chromecast. Для iPhone можно использовать [jqssun/android-airplay-server](https://github.com/jqssun/android-airplay-server); скрипт установки предложен в [PR #84](https://github.com/Gathin23/cleanyourtv/pull/84).
 
-Two weeks on, it was the #1 trending repository on GitHub for the week of 19–25 October, with over 46K stars
-and 5.7K forks, and 1.4M views and 260K clones in 14 days. By 14 November it had 57K stars and 7.4K forks. The lists now cover 481 TV models from 131 brands.
-The coverage: 546 articles from 57 countries and 674 videos on YouTube and Bilibili, all in [docs/PRESS.md](docs/PRESS.md)
-(numbers as of 14 November 2026).
+</details>
 
-## Contributing
+<details>
+<summary><b>Можно просто скачать APK?</b></summary>
 
-The most useful contribution is your TV's debloat list, so the next person with that model does
-not have to rediscover it. [CONTRIBUTING.md](CONTRIBUTING.md) has the format and the testing we ask for.
-Contributing through a coding agent? [AGENTS.md](AGENTS.md) gives it the same rules.
+Готовые APK здесь не публикуются. Соберите лаунчер скриптом из раздела [Ручная настройка](#doing-it-by-hand), используя указанные там JDK и Android SDK: вы получите APK из открытых исходников. Для atvOS есть [русская инструкция установки](docs/atvos-install.ru.md).
 
-| How to help | What it means |
+</details>
+
+<a id="the-story"></a>
+
+## История исходного CleanYourTV
+
+17 октября 2026 года автор CleanYourTV, Gathin, опубликовал [сравнение до и после](https://x.com/gathint/status/2111379569030939102) настройки телевизора своих родителей с помощью Claude Code по Wi-Fi. Публикация набрала 8,6 млн просмотров. Другие владельцы стали повторять настройку, а их результаты легли в основу списков: за первые четыре дня — более 170 моделей и 200 участников. До 19 октября репозиторий назывался tv-vibehack; старые ссылки продолжают работать.
+
+За неделю 19–25 октября он занял первое место в трендах GitHub, набрав более 46 тыс. звёзд и 5,7 тыс. форков. За 14 дней — 1,4 млн просмотров и 260 тыс. клонирований. К 14 ноября — 57 тыс. звёзд и 7,4 тыс. форков; списки охватывали 481 модель от 131 бренда.
+
+По состоянию на 14 ноября 2026 года о проекте вышли 546 статей в 57 странах и 674 видео на YouTube и Bilibili. Ссылки собраны в [docs/PRESS.md](docs/PRESS.md). Эти показатели относятся к исходному CleanYourTV, а не к форку atvOS.
+
+<a id="contributing"></a>
+
+## Как помочь проекту
+
+Самый полезный вклад — проверенный список отключений для вашей модели, чтобы другим владельцам не пришлось изучать всё заново. Формат и проверки описаны в [CONTRIBUTING.md](CONTRIBUTING.md). Для помощников по программированию те же правила собраны в [AGENTS.md](AGENTS.md).
+
+| Как помочь | Что это даёт |
 |---|---|
-| **Your TV's debloat list** | The most useful one: the next person with that model skips the discovery. |
-| **Launcher and prompt** | Launcher improvements and sharper prompt wording are welcome too. |
-| **Built something on top?** | A launcher, a port, a theme: add it to [SHOWCASE.md](SHOWCASE.md), where two hundred and forty-eight projects already live, sorted into home screens, forks, add-ons, tools and other platforms, with an index by TV brand. |
+| **Список отключений для вашей модели** | Другой владелец сможет использовать уже проверенный результат. |
+| **Лаунчер и инструкция для помощника** | Исправления, улучшения лаунчера и более точные формулировки. |
+| **Собственный проект на этой основе** | Добавьте лаунчер, порт или тему в [SHOWCASE.md](SHOWCASE.md). Там уже 248 проектов: домашние экраны, форки, дополнения, утилиты и другие платформы, с указателем по производителям телевизоров. |
 
-The people whose work is in this repo:
+Участники исходного проекта, чьи наработки используются в этом репозитории:
 
-<a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://contrib.rocks/image?repo=Gathin23/cleanyourtv&columns=16&max=400" alt="Contributors"></a>
+<a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://contrib.rocks/image?repo=Gathin23/cleanyourtv&columns=16&max=400" alt="Участники CleanYourTV"></a>
 
 <details>
-<summary><strong>Star history</strong></summary>
+<summary><strong>История звёзд исходного проекта</strong></summary>
 
-<a href="https://star-history.com/#Gathin23/cleanyourtv&Date"><img src="https://api.star-history.com/svg?repos=Gathin23/cleanyourtv&type=Date" alt="Star history chart" width="640"></a>
+<a href="https://star-history.com/#Gathin23/cleanyourtv&Date"><img src="https://api.star-history.com/svg?repos=Gathin23/cleanyourtv&type=Date" alt="График звёзд CleanYourTV" width="640"></a>
 
 </details>
 
-## Contact
+<a id="contact"></a>
 
-| For | Where |
+## Контакты исходного проекта
+
+| Вопрос | Куда обратиться |
 |---|---|
-| **Questions about your TV** | [GitHub Discussions](https://github.com/Gathin23/cleanyourtv/discussions) |
-| **Press and queries** | [hello@itsgathin.com](mailto:hello@itsgathin.com) |
-| **Security issues** | Report them privately through the [Security tab](https://github.com/Gathin23/cleanyourtv/security), see [`SECURITY.md`](SECURITY.md) |
+| **Вопросы о телевизоре** | [GitHub Discussions](https://github.com/Gathin23/cleanyourtv/discussions) |
+| **Пресса и другие обращения к автору CleanYourTV** | [hello@itsgathin.com](mailto:hello@itsgathin.com) |
+| **Уязвимости** | Сообщайте конфиденциально через [вкладку Security](https://github.com/Gathin23/cleanyourtv/security), см. [`SECURITY.md`](SECURITY.md). |
 
-## Legal
+<a id="legal"></a>
 
-- CleanYourTV is an independent open-source project. It is not affiliated with, endorsed by or sponsored
-  by any TV maker or platform. Brand and model names are used only to say which TV a list was tested on,
-  and remain the trademarks of their owners.
-- It works only through settings the TV itself offers to its owner: Developer options, ADB debugging and
-  Android's own `pm disable-user`, the same switch as Settings > Apps > Disable. It does not root the TV,
-  flash firmware, or bypass any lock, DRM or copy protection, and the repo contains no manufacturer
-  software, firmware or APKs.
-- Nothing is uninstalled, and `tools/restore.sh` puts everything back. You run it on a TV you own, at your
-  own risk, and changing a TV's software may affect its warranty or support.
-- Everything here is provided as is, without warranty of any kind, under the MIT licence below.
+## Правовая информация
 
-## Licence
+- CleanYourTV — независимый проект с открытым кодом. Он не связан с производителями телевизоров и платформ, не одобрен и не спонсируется ими. Названия брендов и моделей указывают только, на каком устройстве проверен список; товарные знаки принадлежат их владельцам.
+- Используются только штатные возможности телевизора: настройки разработчика, ADB и Android-команда `pm disable-user`, аналогичная переключателю Настройки → Приложения → Отключить. Root, перепрошивка, обход блокировок, DRM и защиты от копирования не используются. В репозитории нет программного обеспечения, прошивок и APK производителей.
+- Пакеты не удаляются; `tools/restore.sh` позволяет отменить применённые отключения по сохранённой записи. Выполняйте настройку только на принадлежащем вам телевизоре, на свой риск; изменение программной конфигурации может повлиять на гарантию и поддержку.
+- Материалы предоставляются как есть, без каких-либо гарантий, на условиях лицензии MIT.
 
-MIT, see [`LICENSE`](LICENSE). The Outfit typeface is under the SIL Open Font License, see
-`launcher/FONT-LICENSE-OFL.txt`.
+<a id="licence"></a>
+
+## Лицензия
+
+MIT: см. [`LICENSE`](LICENSE). Шрифт Outfit распространяется по SIL Open Font License: `launcher/FONT-LICENSE-OFL.txt`.
