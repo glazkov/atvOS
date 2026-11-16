@@ -20,27 +20,6 @@
 
 ---
 
-<p align="center">
-  <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV: телевизор без рекламы. Отключение лишних приложений на Android TV и Google TV по Wi-Fi и простой домашний экран в стиле Apple TV. Без root, кабеля и удаления приложений; восстановление одной командой." width="800"></a>
-</p>
-
-<p align="center">
-  Другие переводы исходного CleanYourTV: <a href="README.he.md" lang="he" dir="rtl">עברית</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">正體中文</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt-BR.md">Português</a> · <a href="README.nl.md">Nederlands</a> · <a href="README.de.md">Deutsch</a> · <a href="README.uk.md">Українська</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.uz.md">Oʻzbekcha</a> · <a href="README.fr.md">Français</a> · <a href="README.es.md">Español</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Gathin23/cleanyourtv/stargazers"><img src="https://img.shields.io/github/stars/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Звёзды исходного проекта"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/pulls?q=is%3Amerged"><img src="https://img.shields.io/github/issues-search?query=repo%3AGathin23%2Fcleanyourtv%20is%3Apr%20is%3Amerged&style=flat&cacheSeconds=1800&label=merged%20PRs&color=cfffcf&labelColor=15181e" alt="Принятые изменения"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/network/members"><img src="https://img.shields.io/github/forks/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Форки"></a>
-  <a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://img.shields.io/github/contributors/Gathin23/cleanyourtv?style=flat&cacheSeconds=1800&color=cfffcf&labelColor=15181e" alt="Участники"></a>
-  <a href="https://buymeacoffee.com/gathint"><img src="https://img.shields.io/badge/support-%E2%9D%A4-ff5e8a?style=flat&labelColor=15181e" alt="Поддержать автора CleanYourTV"></a>
-  <a href="https://www.producthunt.com/products/cleanyourtv"><img src="https://img.shields.io/badge/Product%20Hunt-upvote%20%E2%96%B2-da552f?style=flat&logo=producthunt&logoColor=white&labelColor=15181e" alt="CleanYourTV на Product Hunt"></a>
-</p>
-
-<p align="center">
-  <a href="docs/PRESS.md"><img src="docs/card.jpg" alt="481 TV models · 131 brands · 31 languages · 572 KB launcher. Статистика исходного CleanYourTV: 546 публикаций в 57 странах; сравнение штатного Google TV и CleanYourTV. Первое место в недельном рейтинге GitHub за 19–25 октября 2026 года по данным trendshift.io." width="800"></a>
-</p>
-
 <a id="start-here"></a>
 
 ## С чего начать
@@ -503,14 +482,7 @@ Play Store остаётся включённым, поэтому приложе�
 
 Участники исходного проекта, чьи наработки используются в этом репозитории:
 
-<a href="https://github.com/Gathin23/cleanyourtv/graphs/contributors"><img src="https://contrib.rocks/image?repo=Gathin23/cleanyourtv&columns=16&max=400" alt="Участники CleanYourTV"></a>
-
-<details>
-<summary><strong>История звёзд исходного проекта</strong></summary>
-
-<a href="https://star-history.com/#Gathin23/cleanyourtv&Date"><img src="https://api.star-history.com/svg?repos=Gathin23/cleanyourtv&type=Date" alt="График звёзд CleanYourTV" width="640"></a>
-
-</details>
+[Список участников CleanYourTV](https://github.com/Gathin23/cleanyourtv/graphs/contributors).
 
 <a id="contact"></a>
 

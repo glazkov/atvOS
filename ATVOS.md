@@ -15,3 +15,8 @@ safe installation, restore and protected-package logic intact.
 The imported TCL switches `poster_shelf` and `youtube_wallpaper_only` remain on the
 screenshot wanted list until sanitized public-build captures are available. Do not
 publish the owner’s private screenshots just to satisfy the upstream gallery rule.
+
+The owner keeps only the Russian README. Translated README files, Italian guide
+copies and upstream English promotional artwork have been removed. Preserve actual
+interface screenshots and launcher locale resources. Promotional card generation
+helpers are inherited tools, not required documentation assets for this fork.
